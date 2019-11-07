@@ -1,0 +1,100 @@
+<HTML><BODY><PRE>
+This example uses 2 files:
+
+<b>Client: TeeFromWebClient.asp</b>
+*************************************************************************
+&lt;%
+  ServerPath=Request.Servervariables("LOCAL_ADDR")
+%&gt;
+
+&lt;html&gt;
+
+&lt;META HTTP-EQUIV="Expires" CONTENT="0"&gt;
+
+&lt;script LANGUAGE="VBScript"&gt;
+
+sub window_onload()
+ TeeCommander1.ChartLink = TChart1.ChartLink
+ TChart1.Import.LoadFromURL("http://&lt;%=ServerPath%&gt;/TeeChart5/TeeFromWeb.asp")
+end sub
+
+Sub TChart1_OnDblClick()
+ TChart1.ShowEditor
+ TChart1.StopMouse
+end sub
+
+Sub TChart1_OnMouseMove(Shift, X,Y)
+' Example use of Chart event
+' Uncomment code to see Mouseover message
+' dim tmp
+'  tmp = TChart1.Series(0).Clicked(X,Y)
+'  if tmp &lt;&gt; -1 then
+'    if TChart1.Series(0).YValues.Value(tmp)=TChart1.Series(0).YValues.Maximum then
+'      msgbox("Max Y Value =" & TChart1.Series(0).YValues.Value(tmp) )
+'    end if
+'  end if
+end sub
+
+&lt;/script&gt;
+&lt;head&gt;
+&lt;title&gt;TeeChart v5 Stream to browser example&lt;/title&gt;
+&lt;LINK REL=STYLESHEET TYPE="text/css" HREF="Style.css"&gt;&lt;/HEAD&gt;&lt;BODY&gt;
+&lt;img src="TeeChart5.png"&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;a href="ASPHome.htm"&gt;Back to Contents page&lt;/a&gt;
+&lt;hr&gt;
+&lt;p&gt;This example page calls a serverside script to create a Chart and return the 
+result to the browser Chart as a native TeeChart template. The browser Chart imports
+the template (inclusion of data is optional). No temporary files are used, output is
+streamed directly to the browser. In this way TeeChart could alternatively stream all 
+supported output image formats (eg. JPEG, PNG, GIF, Metafile) to the browser.&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;p&gt;
+&lt;object ID="TeeCommander1" WIDTH="600" HEIGHT="32" align="center"
+CLASSID="clsid:B6C10532-FB89-11D4-93C9-006008A7EED4"&gt;
+&lt;/object&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;object ID="TChart1" WIDTH="600" HEIGHT="400" align="center"
+CLASSID="clsid:B6C10489-FB89-11D4-93C9-006008A7EED4"&gt;
+&lt;/object&gt;
+&lt;/p&gt;
+
+
+&lt;HR&gt;Copyright &copy; 2002 Steema Software SL&lt;/BODY&gt;
+&lt;/html&gt;
+*************************************************************************
+
+<b>Server: TeeFromWeb.asp</b>
+*************************************************************************
+&lt;!--METADATA NAME="TeeChart Pro v5 ActiveX Control" TYPE="TypeLib" UUID="{B6C10482-FB89-11D4-93C9-006008A7EED4}"--&gt;
+&lt;%
+ ' Meta data section above to permit use of TeeChart constants in script
+
+ Dim i
+ Dim x
+
+  Response.Buffer=true
+  Set Chart1 = CreateObject("TeeChart.TChart")
+
+  Chart1.Header.Text(0)="Performance"
+  Chart1.AddSeries(scBar)
+  Chart1.Aspect.View3D=False
+  Chart1.Panel.Gradient.Visible=True
+  Chart1.Panel.BevelOuter=2
+  Chart1.Panel.BevelWidth=2
+
+  Chart1.Axis.Bottom.Labels.Angle=90
+
+  'use your methods eg via DB to populate Chart or...
+  x=Now*10000
+  For i = 0 to 5
+  Chart1.Series(0).AddXY x, Rnd*x,"",clTeeColor
+  x=x+100
+  Next
+
+  Response.BinaryWrite (Chart1.Export.asNative.SaveToStream(True))
+%&gt;
+*************************************************************************
+</PRE></BODY></HTML>

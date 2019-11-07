@@ -1,0 +1,60 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Automation - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x807 /fo"Release/Automation.res" /d "NDEBUG" /d "_AFXDLL" "C:\Program Files\TeeChart Pro v5 ActiveX Control\Examples\Visual C++\Version 6\Automation\Automation.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP131.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Release/Automation.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Program Files\TeeChart Pro v5 ActiveX Control\Examples\Visual C++\Version 6\Automation\Automation.cpp"
+"C:\Program Files\TeeChart Pro v5 ActiveX Control\Examples\Visual C++\Version 6\Automation\AutomationDlg.cpp"
+"C:\Program Files\TeeChart Pro v5 ActiveX Control\Examples\Visual C++\Version 6\Automation\barseries.cpp"
+"C:\Program Files\TeeChart Pro v5 ActiveX Control\Examples\Visual C++\Version 6\Automation\export.cpp"
+"C:\Program Files\TeeChart Pro v5 ActiveX Control\Examples\Visual C++\Version 6\Automation\series.cpp"
+"C:\Program Files\TeeChart Pro v5 ActiveX Control\Examples\Visual C++\Version 6\Automation\tchart.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP131.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP132.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Release/Automation.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Program Files\TeeChart Pro v5 ActiveX Control\Examples\Visual C++\Version 6\Automation\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP132.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP133.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/Automation.pdb" /machine:I386 /out:"Release/Automation.exe" 
+".\Release\Automation.obj"
+".\Release\AutomationDlg.obj"
+".\Release\barseries.obj"
+".\Release\export.obj"
+".\Release\series.obj"
+".\Release\StdAfx.obj"
+".\Release\tchart.obj"
+".\Release\Automation.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP133.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Automation.cpp
+AutomationDlg.cpp
+barseries.cpp
+export.cpp
+series.cpp
+tchart.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Automation.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

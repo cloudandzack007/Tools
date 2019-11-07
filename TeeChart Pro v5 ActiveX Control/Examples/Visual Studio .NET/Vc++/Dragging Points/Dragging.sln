@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Dragging", "Dragging.vcproj", "{D0F16062-E1DE-4870-AC52-9166A5BFDF14}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{D0F16062-E1DE-4870-AC52-9166A5BFDF14}.Debug.ActiveCfg = Release|Win32
+		{D0F16062-E1DE-4870-AC52-9166A5BFDF14}.Debug.Build.0 = Release|Win32
+		{D0F16062-E1DE-4870-AC52-9166A5BFDF14}.Release.ActiveCfg = Release|Win32
+		{D0F16062-E1DE-4870-AC52-9166A5BFDF14}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

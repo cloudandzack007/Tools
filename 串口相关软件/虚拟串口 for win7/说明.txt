@@ -1,0 +1,6 @@
+1、解压
+2、请先安装NT5下的vsbsetup.exe；
+3、直接运行根目录下vspdconfig.exe即可。
+
+测试在xp\win7都可使用！！
+##后山一根葱##

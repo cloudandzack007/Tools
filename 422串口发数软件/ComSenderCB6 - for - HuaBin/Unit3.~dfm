@@ -1,0 +1,655 @@
+object Form3: TForm3
+  Left = 900
+  Top = 132
+  AutoScroll = False
+  BorderIcons = []
+  Caption = #33258#21160#21270#27979#35797#31383#21475
+  ClientHeight = 499
+  ClientWidth = 249
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object spSkinListBox1: TspSkinListBox
+    Left = 0
+    Top = 185
+    Width = 249
+    Height = 314
+    HintImageIndex = 0
+    TabOrder = 0
+    DrawDefault = True
+    SkinData = Form1.spSkinData1
+    SkinDataName = 'listbox'
+    AlphaBlend = False
+    AlphaBlendValue = 200
+    UseSkinCursor = False
+    DefaultFont.Charset = DEFAULT_CHARSET
+    DefaultFont.Color = clWindowText
+    DefaultFont.Height = 14
+    DefaultFont.Name = 'Arial'
+    DefaultFont.Style = []
+    UseSkinFont = True
+    DefaultWidth = 0
+    DefaultHeight = 0
+    UseSkinItemHeight = True
+    HorizontalExtent = False
+    Columns = 0
+    RowCount = 0
+    ImageIndex = -1
+    NumGlyphs = 1
+    Spacing = 2
+    CaptionMode = False
+    DefaultCaptionHeight = 20
+    DefaultCaptionFont.Charset = DEFAULT_CHARSET
+    DefaultCaptionFont.Color = clWindowText
+    DefaultCaptionFont.Height = 14
+    DefaultCaptionFont.Name = 'Arial'
+    DefaultCaptionFont.Style = []
+    DefaultItemHeight = 20
+    ItemIndex = -1
+    MultiSelect = False
+    ListBoxFont.Charset = DEFAULT_CHARSET
+    ListBoxFont.Color = clWindowText
+    ListBoxFont.Height = 14
+    ListBoxFont.Name = 'Arial'
+    ListBoxFont.Style = []
+    ListBoxTabOrder = 0
+    ListBoxTabStop = True
+    ListBoxDragMode = dmManual
+    ListBoxDragKind = dkDrag
+    ListBoxDragCursor = crDrag
+    ExtandedSelect = True
+    Sorted = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = 14
+    Font.Name = 'Arial'
+    Font.Style = []
+    Align = alClient
+  end
+  object spSkinPanel1: TspSkinPanel
+    Left = 0
+    Top = 0
+    Width = 249
+    Height = 185
+    HintImageIndex = 0
+    TabOrder = 1
+    DrawDefault = True
+    SkinData = Form1.spSkinData1
+    SkinDataName = 'panel'
+    AlphaBlend = False
+    AlphaBlendValue = 200
+    UseSkinCursor = False
+    DefaultFont.Charset = DEFAULT_CHARSET
+    DefaultFont.Color = clWindowText
+    DefaultFont.Height = 14
+    DefaultFont.Name = 'Arial'
+    DefaultFont.Style = []
+    UseSkinFont = True
+    DefaultWidth = 0
+    DefaultHeight = 0
+    ImagePosition = spipDefault
+    TransparentMode = False
+    CaptionImageIndex = -1
+    RealHeight = -1
+    AutoEnabledControls = True
+    CheckedMode = False
+    Checked = False
+    NumGlyphs = 1
+    Spacing = 2
+    DefaultAlignment = taLeftJustify
+    DefaultCaptionHeight = 22
+    BorderStyle = bvFrame
+    CaptionMode = False
+    RollUpMode = False
+    RollUpState = False
+    Caption = 'spSkinPanel1'
+    Align = alTop
+    object spSkinSpeedButton1: TspSkinSpeedButton
+      Left = 8
+      Top = 120
+      Width = 105
+      Height = 25
+      HintImageIndex = 0
+      DrawDefault = True
+      SkinData = Form1.spSkinData1
+      SkinDataName = 'toolbutton'
+      AlphaBlend = False
+      AlphaBlendValue = 200
+      UseSkinCursor = False
+      DefaultFont.Charset = DEFAULT_CHARSET
+      DefaultFont.Color = clWindowText
+      DefaultFont.Height = 14
+      DefaultFont.Name = 'Arial'
+      DefaultFont.Style = []
+      UseSkinFont = True
+      DefaultWidth = 0
+      DefaultHeight = 0
+      UseSkinSize = True
+      UseSkinFontColor = True
+      WidthWithCaption = 0
+      WidthWithoutCaption = 0
+      ImageIndex = 0
+      RepeatMode = False
+      RepeatInterval = 100
+      Flat = False
+      AllowAllUp = False
+      Down = False
+      GroupIndex = 0
+      Caption = #21551#21160
+      ShowCaption = True
+      NumGlyphs = 1
+      Spacing = 1
+      OnClick = spSkinSpeedButton1Click
+    end
+    object spSkinStdLabel3: TspSkinStdLabel
+      Left = 8
+      Top = 16
+      Width = 180
+      Height = 13
+      EllipsType = spetNone
+      UseSkinFont = True
+      UseSkinColor = True
+      DefaultFont.Charset = DEFAULT_CHARSET
+      DefaultFont.Color = clWindowText
+      DefaultFont.Height = -11
+      DefaultFont.Name = 'MS Sans Serif'
+      DefaultFont.Style = []
+      SkinData = Form1.spSkinData1
+      SkinDataName = 'stdlabel'
+      Caption = #35828#26126#65306#24310#26102#20026#25351#20196#25191#34892#21518#30340#24310#26102#12290
+    end
+    object spSkinStdLabel2: TspSkinStdLabel
+      Left = 125
+      Top = 156
+      Width = 42
+      Height = 13
+      EllipsType = spetNone
+      UseSkinFont = True
+      UseSkinColor = True
+      DefaultFont.Charset = DEFAULT_CHARSET
+      DefaultFont.Color = clWindowText
+      DefaultFont.Height = -11
+      DefaultFont.Name = 'MS Sans Serif'
+      DefaultFont.Style = []
+      SkinData = Form1.spSkinData1
+      SkinDataName = 'stdlabel'
+      Caption = #36824#26377'1'#27425
+    end
+    object spSkinStdLabel1: TspSkinStdLabel
+      Left = 184
+      Top = 52
+      Width = 27
+      Height = 13
+      EllipsType = spetNone
+      UseSkinFont = True
+      UseSkinColor = True
+      DefaultFont.Charset = DEFAULT_CHARSET
+      DefaultFont.Color = clWindowText
+      DefaultFont.Height = -11
+      DefaultFont.Name = 'MS Sans Serif'
+      DefaultFont.Style = []
+      SkinData = Form1.spSkinData1
+      SkinDataName = 'stdlabel'
+      Caption = #24310#26102':'
+    end
+    object spSkinSpeedButton5: TspSkinSpeedButton
+      Left = 192
+      Top = 80
+      Width = 49
+      Height = 25
+      HintImageIndex = 0
+      DrawDefault = True
+      SkinData = Form1.spSkinData1
+      SkinDataName = 'toolbutton'
+      AlphaBlend = False
+      AlphaBlendValue = 200
+      UseSkinCursor = False
+      DefaultFont.Charset = DEFAULT_CHARSET
+      DefaultFont.Color = clWindowText
+      DefaultFont.Height = 14
+      DefaultFont.Name = 'Arial'
+      DefaultFont.Style = []
+      UseSkinFont = True
+      DefaultWidth = 0
+      DefaultHeight = 0
+      UseSkinSize = True
+      UseSkinFontColor = True
+      WidthWithCaption = 0
+      WidthWithoutCaption = 0
+      ImageIndex = 0
+      RepeatMode = False
+      RepeatInterval = 100
+      Flat = False
+      AllowAllUp = False
+      Down = False
+      GroupIndex = 0
+      Caption = #36733#20837'...'
+      ShowCaption = True
+      NumGlyphs = 1
+      Spacing = 1
+      OnClick = spSkinSpeedButton5Click
+    end
+    object spSkinSpeedButton4: TspSkinSpeedButton
+      Left = 136
+      Top = 80
+      Width = 49
+      Height = 25
+      HintImageIndex = 0
+      DrawDefault = True
+      SkinData = Form1.spSkinData1
+      SkinDataName = 'toolbutton'
+      AlphaBlend = False
+      AlphaBlendValue = 200
+      UseSkinCursor = False
+      DefaultFont.Charset = DEFAULT_CHARSET
+      DefaultFont.Color = clWindowText
+      DefaultFont.Height = 14
+      DefaultFont.Name = 'Arial'
+      DefaultFont.Style = []
+      UseSkinFont = True
+      DefaultWidth = 0
+      DefaultHeight = 0
+      UseSkinSize = True
+      UseSkinFontColor = True
+      WidthWithCaption = 0
+      WidthWithoutCaption = 0
+      ImageIndex = 0
+      RepeatMode = False
+      RepeatInterval = 100
+      Flat = False
+      AllowAllUp = False
+      Down = False
+      GroupIndex = 0
+      Caption = #20445#23384'...'
+      ShowCaption = True
+      NumGlyphs = 1
+      Spacing = 1
+      OnClick = spSkinSpeedButton4Click
+    end
+    object spSkinSpeedButton3: TspSkinSpeedButton
+      Left = 8
+      Top = 80
+      Width = 105
+      Height = 25
+      HintImageIndex = 0
+      DrawDefault = True
+      SkinData = Form1.spSkinData1
+      SkinDataName = 'toolbutton'
+      AlphaBlend = False
+      AlphaBlendValue = 200
+      UseSkinCursor = False
+      DefaultFont.Charset = DEFAULT_CHARSET
+      DefaultFont.Color = clWindowText
+      DefaultFont.Height = 14
+      DefaultFont.Name = 'Arial'
+      DefaultFont.Style = []
+      UseSkinFont = True
+      DefaultWidth = 0
+      DefaultHeight = 0
+      UseSkinSize = True
+      UseSkinFontColor = True
+      WidthWithCaption = 0
+      WidthWithoutCaption = 0
+      ImageIndex = 0
+      RepeatMode = False
+      RepeatInterval = 100
+      Flat = False
+      AllowAllUp = False
+      Down = False
+      GroupIndex = 0
+      Caption = #28155#21152
+      ShowCaption = True
+      NumGlyphs = 1
+      Spacing = 1
+      OnClick = spSkinSpeedButton3Click
+    end
+    object spSkinSpeedButton2: TspSkinSpeedButton
+      Left = 136
+      Top = 120
+      Width = 49
+      Height = 25
+      HintImageIndex = 0
+      DrawDefault = True
+      SkinData = Form1.spSkinData1
+      SkinDataName = 'toolbutton'
+      AlphaBlend = False
+      AlphaBlendValue = 200
+      UseSkinCursor = False
+      DefaultFont.Charset = DEFAULT_CHARSET
+      DefaultFont.Color = clWindowText
+      DefaultFont.Height = 14
+      DefaultFont.Name = 'Arial'
+      DefaultFont.Style = []
+      UseSkinFont = True
+      DefaultWidth = 0
+      DefaultHeight = 0
+      UseSkinSize = True
+      UseSkinFontColor = True
+      WidthWithCaption = 0
+      WidthWithoutCaption = 0
+      ImageIndex = 0
+      RepeatMode = False
+      RepeatInterval = 100
+      Flat = False
+      AllowAllUp = False
+      Down = False
+      GroupIndex = 0
+      Caption = #22797#20301
+      ShowCaption = True
+      NumGlyphs = 1
+      Spacing = 1
+      OnClick = spSkinSpeedButton2Click
+    end
+    object spSkinStdLabel4: TspSkinStdLabel
+      Left = 10
+      Top = 157
+      Width = 36
+      Height = 13
+      EllipsType = spetNone
+      UseSkinFont = True
+      UseSkinColor = True
+      DefaultFont.Charset = DEFAULT_CHARSET
+      DefaultFont.Color = clWindowText
+      DefaultFont.Height = -11
+      DefaultFont.Name = 'MS Sans Serif'
+      DefaultFont.Style = []
+      SkinData = Form1.spSkinData1
+      SkinDataName = 'stdlabel'
+      Caption = #25191#34892#65306
+    end
+    object spSkinStdLabel5: TspSkinStdLabel
+      Left = 93
+      Top = 156
+      Width = 12
+      Height = 13
+      EllipsType = spetNone
+      UseSkinFont = True
+      UseSkinColor = True
+      DefaultFont.Charset = DEFAULT_CHARSET
+      DefaultFont.Color = clWindowText
+      DefaultFont.Height = -11
+      DefaultFont.Name = 'MS Sans Serif'
+      DefaultFont.Style = []
+      SkinData = Form1.spSkinData1
+      SkinDataName = 'stdlabel'
+      Caption = #27425
+    end
+    object spSkinSpeedButton6: TspSkinSpeedButton
+      Left = 192
+      Top = 120
+      Width = 49
+      Height = 25
+      HintImageIndex = 0
+      DrawDefault = True
+      SkinData = Form1.spSkinData1
+      SkinDataName = 'toolbutton'
+      AlphaBlend = False
+      AlphaBlendValue = 200
+      UseSkinCursor = False
+      DefaultFont.Charset = DEFAULT_CHARSET
+      DefaultFont.Color = clWindowText
+      DefaultFont.Height = 14
+      DefaultFont.Name = 'Arial'
+      DefaultFont.Style = []
+      UseSkinFont = True
+      DefaultWidth = 0
+      DefaultHeight = 0
+      UseSkinSize = True
+      UseSkinFontColor = True
+      WidthWithCaption = 0
+      WidthWithoutCaption = 0
+      ImageIndex = 0
+      RepeatMode = False
+      RepeatInterval = 100
+      Flat = False
+      AllowAllUp = False
+      Down = False
+      GroupIndex = 0
+      Caption = #26242#20572
+      ShowCaption = True
+      NumGlyphs = 1
+      Spacing = 1
+      OnClick = spSkinSpeedButton6Click
+    end
+    object spSkinEdit1: TspSkinEdit
+      Left = 216
+      Top = 49
+      Width = 25
+      Height = 18
+      Text = '1'
+      DefaultColor = clWindow
+      DefaultFont.Charset = DEFAULT_CHARSET
+      DefaultFont.Color = clBlack
+      DefaultFont.Height = 14
+      DefaultFont.Name = 'Arial'
+      DefaultFont.Style = []
+      UseSkinFont = True
+      DefaultWidth = 0
+      DefaultHeight = 0
+      ButtonMode = False
+      SkinData = Form1.spSkinData1
+      SkinDataName = 'edit'
+      AlphaBlend = False
+      AlphaBlendValue = 0
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = 14
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+    end
+    object spSkinComboBox1: TspSkinComboBox
+      Left = 8
+      Top = 48
+      Width = 177
+      Height = 20
+      HintImageIndex = 0
+      TabOrder = 1
+      DrawDefault = True
+      SkinData = Form1.spSkinData1
+      SkinDataName = 'combobox'
+      AlphaBlend = False
+      AlphaBlendValue = 200
+      UseSkinCursor = False
+      DefaultFont.Charset = DEFAULT_CHARSET
+      DefaultFont.Color = clWindowText
+      DefaultFont.Height = 14
+      DefaultFont.Name = 'Arial'
+      DefaultFont.Style = []
+      UseSkinFont = True
+      DefaultWidth = 0
+      DefaultHeight = 0
+      UseSkinSize = True
+      ToolButtonStyle = False
+      HideSelection = True
+      AutoComplete = True
+      HorizontalExtent = False
+      ImageIndex = -1
+      ListBoxUseSkinItemHeight = True
+      ListBoxAlphaBlend = False
+      ListBoxAlphaBlendAnimation = False
+      ListBoxAlphaBlendValue = 200
+      ListBoxWidth = 0
+      ListBoxCaptionMode = False
+      ListBoxUseSkinFont = True
+      ListBoxDefaultFont.Charset = DEFAULT_CHARSET
+      ListBoxDefaultFont.Color = clWindowText
+      ListBoxDefaultFont.Height = 14
+      ListBoxDefaultFont.Name = 'Arial'
+      ListBoxDefaultFont.Style = []
+      ListBoxDefaultCaptionFont.Charset = DEFAULT_CHARSET
+      ListBoxDefaultCaptionFont.Color = clWindowText
+      ListBoxDefaultCaptionFont.Height = 14
+      ListBoxDefaultCaptionFont.Name = 'Arial'
+      ListBoxDefaultCaptionFont.Style = []
+      ListBoxDefaultItemHeight = 20
+      ListBoxCaptionAlignment = taLeftJustify
+      CharCase = ecNormal
+      DefaultColor = clWindow
+      Text = '0:'#26029#28857#22238#25918
+      Items.Strings = (
+        '0:'#26029#28857#22238#25918
+        '1:'#22788#29702'+'#23384#20648
+        '2:'#22788#29702'+'#23454#20256
+        '3:'#20840#25968#25454#22238#25918
+        '4:FLASH'#25830#38500
+        '5:'#21152#36733#21442#25968'0'
+        '6:'#21152#36733#21442#25968'1'
+        '7:'#21152#36733#21442#25968'2'
+        '8:'#21152#36733#21442#25968'3'
+        '9:'#21152#36733#21442#25968'4'
+        '10:'#21152#36733#21442#25968'5'
+        '11:'#21152#36733#21442#25968'6'
+        '12:'#21152#36733#21442#25968'7'
+        '13:'#21152#36733#21160#24577#19978#27880#21442#25968
+        '14:'#20572#27490#25351#20196
+        '15:FPGA'#30417#25511#24320#21551#25351#20196
+        '16:'#31995#32479#22797#20301#25351#20196
+        '17:'#20998#36335#21512#36335#22120#27169#25311#36965#27979#37319#38598
+        '18:'#22788#29702#22120#27169#25311#36965#27979#37319#38598
+        '19:'#22788#29702#22120#24320#26426
+        '20:'#22788#29702#22120#20851#26426
+        '21:'#20998#36335#21512#36335#22120#30452#36890
+        '22:'#20998#36335#21512#36335#22120#22788#29702
+        '23:'#20998#36335#21512#36335#22120#27169#24335#29366#24577
+        '24:'#27169#25311#28304#21021#22987#21270
+        '25:'#27169#25311#28304#36873#25968
+        '26:'#27169#25311#28304#24320#22987
+        '27:'#27169#25311#28304#20572#27490
+        '28:'#26174#31034#24320#22987
+        '29:'#26174#31034#20572#27490
+        '30:'#26174#31034#27604#23545
+        '31:'#26174#31034#20999#23454#20256
+        '32:'#26174#31034#20999#22238#25918
+        '33:'#26174#31034#35774#31934#24230
+        '34:'#20844#36741#21457#36865
+        '35:'#20844#36741#20572#27490
+        '36:'#36965#27979#37319#38598#24320#22987
+        '37:'#36965#27979#37319#38598#20572#27490
+        '38:'#25968#25454#19978#27880#24320#22987
+        '39:'#25968#25454#19978#27880#20572#27490
+        '40:'#27979#35797#27169#24335)
+      ItemIndex = 0
+      DropDownCount = 8
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = 14
+      Font.Name = 'Arial'
+      Font.Style = []
+      Sorted = False
+      Style = spcbFixedStyle
+    end
+    object spSkinEdit2: TspSkinEdit
+      Left = 52
+      Top = 155
+      Width = 33
+      Height = 18
+      Text = '1'
+      DefaultColor = clWindow
+      DefaultFont.Charset = DEFAULT_CHARSET
+      DefaultFont.Color = clBlack
+      DefaultFont.Height = 14
+      DefaultFont.Name = 'Arial'
+      DefaultFont.Style = []
+      UseSkinFont = True
+      DefaultWidth = 0
+      DefaultHeight = 0
+      ButtonMode = False
+      SkinData = Form1.spSkinData1
+      SkinDataName = 'edit'
+      AlphaBlend = False
+      AlphaBlendValue = 0
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = 14
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 2
+    end
+  end
+  object spDynamicSkinForm1: TspDynamicSkinForm
+    DisableSystemMenu = False
+    PositionInMonitor = sppDefault
+    UseFormCursorInNCArea = False
+    MaxMenuItemsInWindow = 0
+    ClientWidth = 0
+    ClientHeight = 0
+    HideCaptionButtons = False
+    AlwaysShowInTray = False
+    LogoBitMapTransparent = False
+    AlwaysMinimizeToTray = False
+    UseSkinFontInMenu = True
+    ShowIcon = False
+    MaximizeOnFullScreen = False
+    ShowObjectHint = False
+    UseDefaultObjectHint = True
+    UseSkinCursors = False
+    DefCaptionFont.Charset = DEFAULT_CHARSET
+    DefCaptionFont.Color = clBtnText
+    DefCaptionFont.Height = 14
+    DefCaptionFont.Name = 'Arial'
+    DefCaptionFont.Style = [fsBold]
+    DefInActiveCaptionFont.Charset = DEFAULT_CHARSET
+    DefInActiveCaptionFont.Color = clBtnShadow
+    DefInActiveCaptionFont.Height = 14
+    DefInActiveCaptionFont.Name = 'Arial'
+    DefInActiveCaptionFont.Style = [fsBold]
+    DefMenuItemHeight = 20
+    DefMenuItemFont.Charset = DEFAULT_CHARSET
+    DefMenuItemFont.Color = clWindowText
+    DefMenuItemFont.Height = 14
+    DefMenuItemFont.Name = 'Arial'
+    DefMenuItemFont.Style = []
+    UseDefaultSysMenu = True
+    SupportNCArea = True
+    AlphaBlendAnimation = False
+    AlphaBlendValue = 200
+    AlphaBlend = False
+    MenusAlphaBlend = False
+    MenusAlphaBlendAnimation = False
+    MenusAlphaBlendValue = 200
+    SkinData = Form1.spSkinData1
+    MinHeight = 0
+    MinWidth = 0
+    MaxHeight = 0
+    MaxWidth = 0
+    Sizeable = True
+    DraggAble = False
+    Magnetic = False
+    MagneticSize = 10
+    BorderIcons = [biSystemMenu, biMinimize, biMaximize, biRollUp]
+    Left = 512
+    Top = 8
+  end
+  object SaveDialog1: TSaveDialog
+    DefaultExt = 'TXMB'
+    Filter = #36965#25511#25351#20196#25991#20214'(*.TXMB)|*.TXMB'
+    Left = 168
+    Top = 8
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 208
+    Top = 8
+  end
+  object Timer1: TTimer
+    Enabled = False
+    OnTimer = Timer1Timer
+    Left = 136
+    Top = 8
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 104
+    Top = 8
+    object N1: TMenuItem
+      Caption = #21024#38500
+    end
+  end
+end

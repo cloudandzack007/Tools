@@ -1,0 +1,135 @@
+===========================================
+       TeeChart-Pro Activex 5
+       Copyright (c) 1997-2002
+         by David Berneda and
+             Marc Meumann
+         All Rights Reserved
+===========================================
+
+SOFTWARE LICENSING CONTRACT
+
+NOTICE TO USER: THIS IS A CONTRACT. BY 
+CLICKING THE 'OK' BUTTON BELOW DURING 
+INSTALLATION, YOU ACCEPT ALL THE TERMS AND 
+CONDITIONS OF THIS AGREEMENT.
+===========================================
+
+Disclaimer
+==========
+The Author cannot and does not guarantee that 
+any functions contained in the Software will 
+meet your requirements, or that its operations 
+will be error free.  The entire risk as to the 
+Software performance or quality, or both, is 
+solely with the user and not the Author.  You 
+assume responsibility for the selection of the 
+component to achieve your intended results, and 
+for the installation, use, and results obtained
+from the Software. 
+
+The Author makes no warranty, either implied or 
+expressed, including with-out limitation any 
+warranty with respect to this Software documented 
+here, its quality, performance, or fitness for 
+a particular purpose. In no event shall the 
+Author be liable to you for damages, whether 
+direct or indirect, incidental, special, or 
+consequential arising out the use of or any 
+defect in the Software,  even if the Author has 
+been advised of the possibility of such damages, 
+or for any claim by any other party. 
+
+All other warranties of any kind, either express 
+or implied, including but not limited to the 
+implied warranties of merchantability and fitness 
+for a particular purpose, are expressly excluded. 
+
+
+License
+=======
+
+TeeChart 5.0 Pro ActiveX is royalty free for use
+in compiled applications only. 
+That means that you may distribute your programs
+compiled with TeeChart code incurring no royalty 
+fee. You may not distribute TeeChart source code 
+or TeeChart compiled classes to enable its use as
+a development tool or to create software programs.
+Please refer to Steema SL for any special 
+requirements you may have.
+
+==================================================
+
+
+Guidance notes for licensing TeeChart
+=====================================
+
+What license do I need ?
+------------------------
+The TeeChart Pro Developer license permits one 
+developer to develop with TeeChart Pro. A TeeChart 
+Pro Webserver runtime license is required only for 
+a Server publishing access to a scripted Charting 
+application, ie. TeeChart scriptable via an ASP 
+script, DLL, ActiveX Usercontrol or equivalent 
+server module. A webserver license is not required 
+if the server only provides Codebase access for 
+downloading the TeeChart Control.
+
+Applied compiled application scenario
+-------------------------------------
+The license allows the inclusion of the 
+teechart.ocx file (and user help) with a compiled 
+application. The conditions of license do not 
+permit that TeeChart classes/properties/methods 
+are made available in an application that may be 
+used to further program with those classes. That 
+type of application would be considered a 
+'development' tool (rather like Visual Basic 
+itself, or Visual C++) and users of that 
+application would be considered TeeChart 
+developers and be thus subject to require a 
+TeeChart developer license. An application compiled 
+as a DLL with access to TeeChart properties would 
+be an example of an application requiring TeeChart 
+licensing when distributed. If that DLL is a server 
+module only used for a web based application see 
+the section below "Web server licenses".
+
+Applied Web browser scenario
+----------------------------
+Clients using the Control served by a Web Server 
+(via Codebase or similar) are not subject to 
+purchase of a TeeChart license depending on the 
+condition of use described here. In the case of a 
+web browser application for which the TeeChart 
+component is included as a clientside control (with 
+OBJECT Codebase or similar) it is not possible to 
+physically control 'application on-developability' 
+as the TeeChart component is inherently an API that 
+could be scripted or 'on-developed with' in a 
+browser page. Where possible, the application 
+developer should make it clear to his/her clientbase 
+that the Control may only be used within the 
+confines of his/her application. Any further 
+scripting with the TeeChart Component requires a 
+developer license by the scripter. 
+
+Web server runtime licenses
+---------------------------
+A TeeChart Web Server license is required for each 
+web server serving the Control with a serverside 
+scriptable module (eg. ASP, ISAPI DLL, VB Usercontrol). 
+Steema Software recognises that there are some 
+technical advantages to using a compiled UserControl 
+as an ActiveX Control or DLL housing the TeeChart 
+Control serverside rather than use of ASP (namely 
+availibility of TeeChart events serverside). For this 
+specific use of TeeChart, Steema Software treat the 
+compiled Control, when housing a Server based process 
+only, as eligible for a Web Server runtime license and 
+exempt from any additional royalties beyond the 
+basic requirements already outlined in this section. 
+Web Server licenses are available as a separate product 
+to the Developer license, available only to licensees 
+of at least one registered Developer license.

@@ -1,0 +1,86 @@
+<HTML>
+<HEAD>
+    <SCRIPT LANGUAGE="JavaScript" FOR="window" EVENT="onLoad()">
+<!--
+ Add();
+-->
+    </SCRIPT>
+<TITLE>Sample: TeeChart Scriptlet Example</TITLE>
+<STYLE>
+<!--
+.head  {font-family:Verdana; font-size:11pt; font-weight:bold}
+.para  {font-family:Verdana; font-size:9pt; font-weight:normal}
+-->
+</STYLE>
+<SCRIPT LANGUAGE=VBSCRIPT>
+
+SUB ModTitle()
+  Dim Title
+  Title = inputbox("Type in new Chart Title")
+  if Title <> "" Then
+    scriptlet.ChangeTitle(Title)
+  End if
+END SUB
+
+</SCRIPT>
+
+<SCRIPT LANGUAGE=JAVASCRIPT>
+var SeriesType
+
+function Add(){
+		SeriesType = document.Form1.Target1.options(document.Form1.Target1.selectedIndex).value;
+		scriptlet.AddSeries(SeriesType);
+}
+
+</SCRIPT>
+<LINK REL=STYLESHEET TYPE="text/css" HREF="style.css"></head>
+<BODY LEFTMARGIN=40>
+<font face="Arial" color="#004080"><em><big><strong> TeeChart Scriptlet Example</strong></big></em></font></h3>
+</p>
+
+<a href="../Start Local examples.htm">Return to Examples</a>&nbsp;
+<hr>
+The example shows placement of TeeChart in a scriptlet object, uses VBScript and Javascript.<br>
+<b>This example will only function correctly with Internet Explorer v4 and later.</b>
+<FONT FACE="verdana,arial,helvetica" SIZE=2>
+
+
+<OBJECT ID="scriptlet" 
+		STYLE="	position:absolute;
+				width:600;
+				height:270;
+				top:160;
+				left:0;"
+        type="text/x-scriptlet"
+		data="teescrip.htm">
+</OBJECT>
+
+<FORM NAME="Form1" ACTION="">
+<SELECT NAME="Target1" STYLE="position:absolute; top:430; left:0 language="JavaScript" onchange="Add()">
+<OPTION SELECTED VALUE="0">Line</option>
+<OPTION VALUE="1">Bar
+<OPTION VALUE="2">HorizBar
+<OPTION VALUE="3">Area
+<OPTION VALUE="4">Point
+<OPTION VALUE="5">Pie
+<OPTION VALUE="6">FastLine
+<OPTION VALUE="7">Shape
+<OPTION VALUE="8">Gantt
+<OPTION VALUE="9">Bubble
+<OPTION VALUE="10">Arrow
+<OPTION VALUE="11">Candle
+<OPTION VALUE="12">Polar
+<OPTION VALUE="13">Surface
+<OPTION VALUE="14">Volume
+<OPTION VALUE="15">ErrorBar
+<OPTION VALUE="16">Bezier
+<OPTION VALUE="17">Contour
+<OPTION VALUE="18">Error
+<OPTION VALUE="19">Point3D
+<OPTION VALUE="20">Radar
+</SELECT></FORM>
+<BUTTON onclick="ModTitle()" STYLE="position:absolute; top:430; left:200">Change Chart Title</BUTTON>
+<div STYLE="position:absolute; top:455; left:40"><b>Select Series Type</b></div>
+
+</BODY>
+</HTML>

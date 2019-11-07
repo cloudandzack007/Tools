@@ -1,0 +1,13 @@
+Form=Form ODBC.frm
+Object={B6C10482-FB89-11D4-93C9-006008A7EED4}#1.0#0; teechart5.ocx
+ProjWinSize=82,606,194,128
+ProjWinShow=2
+Name="Project1"
+HelpContextID="0"
+StartMode=0
+VersionCompatible32="0"
+MajorVer=1
+MinorVer=0
+RevisionVer=0
+AutoIncrementVer=0
+ServerSupportFiles=0

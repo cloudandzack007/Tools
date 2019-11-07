@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UpgradeLog>
+    <Settings>
+        <Setting
+            Name = "LogFile"
+            Value = "Project Drag.log"
+        />
+        <Setting
+            Name = "GenerateInterfacesForClasses"
+            Value = "FALSE"
+        />
+        <Setting
+            Name = "ProjectName"
+            Value = "Project Drag"
+        />
+        <Setting
+            Name = "OutputName"
+            Value = "Project Drag.vbproj"
+        />
+        <Setting
+            Name = "OutputDir"
+            Value = "C:\Program Files\TeeChart Pro v5 ActiveX Control\Examples\Visual Basic\Visual Basic 5 &amp; 6\Dragging Points\Project1.NET"
+        />
+        <Setting
+            Name = "ProjectPath"
+            Value = "C:\Program Files\TeeChart Pro v5 ActiveX Control\Examples\Visual Basic\Visual Basic 5 &amp; 6\Dragging Points\Project Drag.vbp"
+        />
+        <Setting
+            Name = "MigrateProjectTo"
+            Value = "0"
+        />
+    </Settings>
+    <File
+        OldPath = "C:\Program Files\TeeChart Pro v5 ActiveX Control\Examples\Visual Basic\Visual Basic 5 &amp; 6\Dragging Points\Form Drag.frm"
+        NewPath = "C:\Program Files\TeeChart Pro v5 ActiveX Control\Examples\Visual Basic\Visual Basic 5 &amp; 6\Dragging Points\Project1.NET\Form Drag.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2056"
+                ObjectName = "Combo1"
+                ObjectType = "ComboBox"
+                PME = "ItemData"
+            >ComboBox property Combo1.ItemData was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "1041"
+                PME = "array"
+            >Array has a new behavior.</Issue>
+        </Section>
+        <Section Name = "Check1_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >Event Check1.CheckStateChanged may fire when form is intialized.</Issue>
+        </Section>
+        <Section Name = "Combo1_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "2075"
+            >Event Combo1.SelectedIndexChanged may fire when form is intialized.</Issue>
+        </Section>
+        <Section Name = "Form_Load" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object TheOriginalValue.</Issue>
+        </Section>
+        <Section Name = "HScroll1_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "HScroll1"
+                ObjectType = "HScrollBar"
+                PME = "Change"
+            >HScrollBar event HScroll1.Change has a new behavior.</Issue>
+        </Section>
+        <Section Name = "TChart1_OnAfterDraw" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object X.</Issue>
+        </Section>
+    </File>
+</UpgradeLog>
+

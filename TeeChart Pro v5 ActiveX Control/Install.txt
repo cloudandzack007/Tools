@@ -1,0 +1,269 @@
+=======================================================
+ TeeChart Pro ActiveX version 5
+
+ Steema SL
+ Emili Grahit 31 E-D
+ 17002 GIRONA, CATALONIA, (Spain)
+
+ www.steema.com
+ info@steema.com
+========================================================
+
+INSTALLATION INSTRUCTIONS
+-------------------------
+
+1) The installer will copy TeeChart
+   files to the directory of your choice
+   and register the teechart5.ocx Control.
+
+**Important
+
+Installing TeeChart Pro AX v5 leaves intact any existing
+TeeChart Pro ActiveX v4 installation. Some registry modifications
+are made to permit concurrent use of both controls. Either or 
+both controls may be used on your PC at the same time. Projects 
+built with TeeChart Pro v4 will continue to use v4. Steema supplies 
+an upgrade utility, available via the TeeChart menu group, to upgrade
+Visual Basic projects. We advise you make a backup first. For other
+programming environments please follow the upgrade steps to upgrade
+existing projects.
+
+If at a later stage you install an earlier release of TeeChart Pro AX 
+v4 (prior to version 4.0.1), you should re-install TeeChart Pro AX v5 
+afterwards as some registry settings for v5 are overwritten by earlier 
+v4 releases.
+
+Use Uninstall from Windows' Add/remove software Control Panel option
+and 'Restore backup' when prompted to unisntall TeeChart Pro AX v5.
+
+----------------------------
+
+Use of TeeChart in new projects
+
+
+Installation in Visual Basic 7.xx (.NET)
+-----------------------------------------
+
+Assuming the installer has correctly registered the TeeChart Pro
+Control in your machine:
+
+
+2) Start a new project.
+3) Select the Visual Studio Toolbox (normally located on the left 
+   of the IDE) and right-mouse button click to select 'Customize
+   Toolbox'. Select One or all of the TeeChart palette components
+   from the list in the COM Controls page.
+4) When the TeeChart component[s] is/are located on the toolbox
+   you may drag and place the TeeChart component[s] onto the 
+   project Form.
+
+
+Installation in Visual Basic 5.0 & 6.0
+---------------------------------------
+
+2) Start a new project and select "Project-->Components"
+   and "Browse..." to select the:
+
+        TeeChart Pro ActiveX Control
+	c:\yourpath\teechart5.ocx 
+
+   This will install the TeeChart control at Visual Basic
+   ToolBox ( View --> ToolBox ).
+
+3) See the component palette, a new Pie icon representing
+   the TeeChart ActiveX Control.
+
+
+
+Installation in Visual Basic 4.0
+---------------------------------
+
+2) Start a new project and select "Tools-->Custom Controls"
+   and "Browse..." to select the:
+
+        TeeChart Pro ActiveX Control
+	c:\yourpath\teechart5.ocx 
+
+   This will install the TeeChart control at Visual Basic
+   ToolBox ( View --> ToolBox ).
+
+
+3) See the component palette, a new Pie icon appears representing
+   the TeeChart ActiveX Control.
+
+
+Note: If you want the TeeChart Pro Activex control 
+      to show everytime in Visual Basic toolbox, 
+      simply save a blank project named AUTO32LD.VBP
+      in your Visual Basic installation folder
+      after installing TeeChart in Visual Basic palette.
+
+          
+For other programming environments:
+-----------------------------------
+
+2) To make sure the TeeChart ActiveX control is 
+   accessible, you can (optionally) execute this 
+   command to register TeeChart Pro Activex under 
+   Windows :
+
+   regsvr32.exe c:\yourpath\teechart5.ocx
+
+   ( regsvr32.exe is a Microsoft application in \windows\system )
+
+
+========
+ DEMOS:
+========
+
+(The Activex control needs to be registered before opening the demos)
+
+Under the "Examples" folder you will find several examples 
+available for Visual Basic (4, 5 and 6), Internet Explorer (3 and 4), 
+FoxPro, Access and Word-97 and Excel-97 using VBA and Visual C++ 5 and 6, VJ++ v1.1 and v6 and Powerbuilder v6.
+
+===================
+Basic Chart Steps:
+===================
+
+This section will guide you to a quick start using the 
+TeeChart control.
+
+Please see the TeeChart help file ( teechart.hlp ) for
+more detailed instructions and control reference.
+
+See also the "Tutorials" documentation (in HTML format)
+for extended information.
+
+
+===============================
+ Steps to create a new Chart:
+===============================
+
+1) Start a new project with a new Form.
+
+2) Select "Project... Components" in Visual Basic 5
+   (or "Tools...Custom Controls" in Visual Basic 4), 
+   and check the "TeeChart Pro Activex Control" from
+   the list of installed controls.
+
+3) You'll see the TeeChart ActiveX Control ( the control with a 
+   "Pie" Chart icon ) in Visual Basic component palette.
+
+   Select and drop it to the Form.
+
+   This will show you a grey panel with a "TeeChart" blue text
+   title and an empty Chart.
+
+4) Right-click the Chart control and select "Edit..." from
+   the context popup menu.
+
+5) This will show the TeeChart editor dialog.
+   Every modification using this dialog repaints automatically
+   the Chart control.
+
+Now lets add a Series....
+
+6) Click on "Add..." to show the TeeChart Gallery
+   The Gallery shows the available Chart styles.   
+
+7) Select a Chart style, for example : Bar
+   (Click "Ok" or double-click "Bar" to close the Gallery)
+
+
+Now you have a Bar Series on your Chart, filled with random 
+values. 
+
+These random values are shown only at design-time.
+
+Add now points to the Bar Series manually...
+
+8) Double-click the Form (not the Chart), to go to the
+   code window:
+
+   Private Sub Form_Load()
+
+   End Sub
+
+9) Fill in this code:
+
+   Private Sub Form_Load()
+    With TChart1.Series(0)
+      .Clear
+      .Add 100, "Apples",  vbRed
+      .Add 140, "Pears",   vbGreen
+      .Add 80,  "Bananas", vbYellow
+    End With
+   End Sub
+
+10) Press F5 to execute the project.
+
+The Form will show the TeeChart control with
+the manually added points.
+
+See attached demos for more complex programming.
+-----------------------------------------------
+
+
+===========================
+Database ADO/ODBC Charting:
+===========================
+
+TeeChart Pro AX v5 replaces the use of ODBC with ADO.
+ADO permits access to ODBC datasources and most TeeChart
+v4 datasource code will work directly with v5 (see the
+VB examples - For VC++ see the VC++ tutorial for upgrade
+notes).
+
+Data can be retrieved from ADO datasources and plotted 
+in TeeChart control, both at design-time and run-time, and
+both with or without programming.
+
+To do so, you need first to have the Microsoft ADO core
+components installed on your machine.
+
+See http://www.microsoft.com/data/ado/default.htm for
+more information about ADO.
+
+Reproduce the steps from 1) to 7) on the above example
+( Basic Chart Steps ).
+
+8) On the TeeChart dialog editor, go to the "Series" tab
+   and click on the "DataSource" tab of "Series1"
+
+9) Select the "Dataset" option on the combobox.
+
+10) Click the "New..." button to choose an ADO dataset
+    or SQL query sentence.
+
+11) Select the appropiate fields for the Series.
+    For Series Labels, use a string ( char ) field.
+    For Series values, use integer, datetime, floating or 
+    numeric or currency fields.
+
+12) Click "Close" to close the TeeChart-Pro editor dialog.
+
+The Series will be populated with data retrieved from the
+selected ADO dataset.
+
+See the included ADO/ODBC demos.
+-----------------------------------------------------------
+
+CUSTOM CHARTING:
+=================
+
+The TeeChart Activex Control is a tree of objects,
+each object having properties and methods.
+Through modifying these objects is possible to configure
+everything at runtime.
+
+Manipulating axis, zooming, scrolling, handling click
+events, changing series types, data, clipboard, printer,
+etc, all is possible using TeeChart Pro.
+
+Visit www.steema.com for more information, examples
+and technical information.
+
+Thank You Very Much !
+Steema SL.
+--------------------------------------------------------

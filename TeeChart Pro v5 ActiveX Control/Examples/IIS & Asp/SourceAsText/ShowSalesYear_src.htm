@@ -1,0 +1,54 @@
+<HTML><BODY><PRE>
+&lt;!--METADATA NAME="TeeChart Pro v5 ActiveX Control" TYPE="TypeLib" UUID="{B6C10482-FB89-11D4-93C9-006008A7EED4}"--&gt;
+&lt;%
+ ' Metadata section above to permit use of TeeChart constants in script
+
+ Function RunChart()
+
+   Set Chart1 = CreateObject("TeeChart.TChart")
+
+   ' We found that APPL_PHYSICAL_PATH returned different paths on 
+   ' different operating platforms! So, just in case .....
+   If InStr(Request.Servervariables("APPL_PHYSICAL_PATH"),"TeeChart5") then
+     AppPath = Request.Servervariables("APPL_PHYSICAL_PATH")
+   else
+     AppPath = Request.Servervariables("APPL_PHYSICAL_PATH") & "\TeeChart5\"
+   end if
+
+   Chart1.Import.LoadFromFile(AppPath & "SalesReport.tee")
+   Chart1.Width=500
+   Chart1.Height=350
+   Chart1.Tools(0).asAnnotation.Text="Year 2000"
+
+   'use your methods eg via DB to populate Chart or...
+   For i = 1 to 12
+     Chart1.Series(0).AddXY i, Rnd*10,"",clTeeColor
+   Next
+
+   'example format for PNG export
+   RunChart=(Chart1.Export.asPNG.SaveToStream)
+   Set Chart1=Nothing
+ End Function
+
+ Function CreatePage
+   Response.Expires = 0
+   Response.Write("&lt;html&gt;" & chr(13))
+   Response.Write("&lt;HEAD&gt;&lt;title&gt;TeeChart Pro AX Control using Tee Template files serverside&lt;/title&gt;" & chr(13))
+   Response.Write("&lt;LINK REL=STYLESHEET TYPE=""text/css"" HREF=""Style.css""&gt;&lt;/HEAD&gt;&lt;BODY&gt;" & chr(13))
+   Response.Write("&lt;img src=""TeeChart5.png""&gt;" & chr(13))
+   Response.Write("&lt;br&gt;&lt;br&gt;" & chr(13))
+   Response.Write("&lt;a href=""ASPHome.htm""&gt;Back to Contents page&lt;/a&gt;" & chr(13))
+   Response.Write("&lt;hr&gt;" & chr(13))
+   Response.Write("&lt;img id=Img1 src=""ShowSalesYear.asp?CreateChart=1""&gt;" & chr(13))
+   Response.Write("&lt;HR&gt;Copyright &copy; 2002 Steema Software SL" & chr(13))
+   Response.Write("&lt;/body&gt;" & chr(13))
+   Response.Write("&lt;/html&gt;" & chr(13))
+ End Function
+
+ if Request.QueryString("CreateChart")=1 Then
+   Response.BinaryWrite(RunChart)
+ else 
+   CreatePage
+ end if 
+%&gt;
+</PRE></BODY></HTML>

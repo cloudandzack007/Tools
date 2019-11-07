@@ -1,0 +1,253 @@
+===========================================
+ TeeChart Pro Activex Control v5
+ MS .NET COMPATIBILITY
+ Copyright (c) 1997-2002
+ by David Berneda and
+ Marc Meumann
+ All Rights Reserved.
+
+ http://www.steema.com
+ email: info@steema.com
+        supportx@steema.com
+
+===========================================
+ July 2002
+ TeeChart Pro Activex Control v5 
+ MS Visual Studio .NET compatibility notes
+===========================================
+
+Please see the release.txt release notes 
+for bugfix and feature information about
+this release.
+===========================================
+
+Changes for NET compatibility
+
+- The Chart.Series(xx) read-only property has 
+  been replaced by a Function method (affects 
+  only code written in VC++ and similar 
+  languages that make direct reference to Get_ 
+  and Set_ of properties). The new Series 
+  method (called Series) changes visibly by 
+  removal of the property 'Get_' element of the 
+  Function. The change is required due to a 
+  current MS.NET import restriction causing 
+  non-import of ActiveX properties that have 
+  an index parameter (only affects the root 
+  level of controls !). 
+
+  For a VB application no code change is 
+  necessary. Please see the following notes for
+  other environments. 
+
+  The original property has been hidden in the 
+  interface and renamed to aSeries keeping its
+  existing Dispid to support backward compatibility
+  with applications compiled with previous
+  releases of TeeChart 5.
+
+- The TChart OnSeriesBeforeAdd method uses a 
+  boolean variable called 'Continue'. "continue" 
+  is a keyword in C# (the language used to interim 
+  compile TeeChart namespace information in .NET). 
+  This had caused an import problem with the BETA2 
+  release of Visual Studio .NET.
+  As a precaution we have chosen to rename the 
+  parameter to 'MoreValues' for the TeeChart Pro 
+  AX NET beta.
+
+Notes on use:
+-------------
+
+- Constant names in NET require full reference by 
+  default:
+
+  eg.
+  AxTChart1.AddSeries(TeeChart.ESeriesClass.scLine)
+
+Upgrading existing projects:
+----------------------------
+
+Upgrading existing Visual Studio projects works
+without manual intervention in code for most simple
+projects.
+
+Notable points relating to import: 
+
+VISUAL BASIC project:
+=====================
+
+- Designtime saved content of a Chart does not
+  always successfully import to a NET project.
+
+  We recommend you open the project first in its
+  current environment (eg. Visual Basic v6) and
+  provoke a change in the Chart and resave the 
+  project. That will update the saved frx Chart
+  information data to v5.0.3. Then save the 
+  Chart content as a tee file by right-clicking
+  the Chart and selecting 'Export'.
+
+  Some projects 'may' then import the saved Chart
+  correctly without further steps required. If the
+  Chart content doesn't import successfully then
+  right-click on the Chart and import the saved
+  tee file.
+
+  If the project fails to import, clear the Chart
+  content after saving it to tee (remove and 
+  replace the Chart with an empty one) and 
+  re-import following the above step to later 
+  import the saved tee file.
+
+- Calls to interfaces not supported.
+
+  In Visual Studio v6 and prior versions, it was 
+  possible to connect components by interface.
+
+  eg.
+  TeeCommander.Chart=TChart1
+
+  This is no longer possible. You should use the
+  integer link:
+
+  eg.
+  TeeCommander.ChartLink=TChart1.ChartLink
+
+- Colour definition requires update
+
+  TeeChart colours map as UInt32 when imported 
+  to NET. The colour definition when applied 
+  takes the following form:
+
+  .Labels.Font.Color = System.Convert.ToUInt32(System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.Cyan))
+
+- Some event syntax is incorrect on import. Notably 
+  the Mouse events which are 'duplicated' by default
+  NET appointed events. If you find event syntax to 
+  be incorrect, modify the syntax as follows:
+
+  eg.
+    Private Sub TChart1_OnMouseUpEvent(ByVal eventSender As System.Object, _
+                                       ByVal eventArgs As AxTeeChart.ITChartEvents_OnMouseUpEvent) _
+                                       Handles TChart1.OnMouseUp
+	'do something
+    End Sub
+
+- Some form object (eg. Checkbox) events may fire
+  before the Chart is loaded. That didn't occur in VB6
+  and will require a workaround in VB.NET if Chart 
+  properties are referenced in this way at Form load.
+
+  eg. taken from VB Drag Points example:
+
+  'Check1.CheckStateChanged may fire when form is intialized
+    Private Sub Check1_CheckStateChanged(ByVal eventSender As System.Object, _
+                                         ByVal eventArgs As System.EventArgs) _
+                                         Handles Check1.CheckStateChan
+    ' switch 2D / 3D view...
+    TChart1.Aspect.View3D = Check1.CheckState
+    ' enable scroll-bar only in 3D...
+    HScroll1.Enabled = Check1.CheckState
+  End Sub  
+
+  In the above event the View3D line will fail as the 
+  Chart isn't yet loaded when the event is called. An 
+  option to workaround it may be to set a boolean 
+  'OK_To_Run' variable to set after the first Chart 
+  Repaint.
+
+  eg. OK_To_Run false on load and set to true in Form_Load event after Chart is populated, etc.
+    Private Sub Check1_CheckStateChanged(ByVal eventSender As System.Object, _
+                                         ByVal eventArgs As System.EventArgs) _
+                                         Handles Check1.CheckStateChan
+    ' switch 2D / 3D view...
+    If OK_To_Run = True Then
+      TChart1.Aspect.View3D = Check1.CheckState
+    End if
+    ' enable scroll-bar only in 3D...
+    HScroll1.Enabled = Check1.CheckState
+  End Sub 
+
+  Microsoft recommend a similar step (add a IsInitializing
+  property to the Form). We'll be taking a closer look at 
+  these issues to see if we can recommend less demanding 
+  steps to resolve them.
+
+
+VISUAL C++ project:
+=====================
+
+The Series declaration has changed. The easiest way to 
+upgrade the project is to import TeeChart v5.0.3 classes
+before upgrading the project to .NET.
+
+
+1. All references to 'GetSeries(xx)' should be changed to 'Series(xx)'
+   That will call the new Series method that returns the Series 
+   Interface (just as the predecesor property did). The Series
+   property has been name changed to aSeries, retaining its DispId to 
+   support existing compiled applications.
+
+2. The following is handled automatically if you import 
+   the TeeChart v5.0.3 classes. For reference, the following
+   changes occur to the Series declaration.
+
+   *Note you should not need to do anything if you import TeeChart 
+    5.0.3 to your project.
+
+   a) In the TChart.h Class header file the GetSeries declaration changes to:
+
+      CSeries Series(long SeriesIndex);
+
+   b) In the TChart.cpp Class impl. file the GetSeries declaration changes to:
+
+     CSeries CTChart::Series(long SeriesIndex)
+     {
+	LPDISPATCH pDispatch;
+	static BYTE parms[] =
+		VTS_I4;
+	InvokeHelper(0x14, DISPATCH_METHOD, VT_DISPATCH, (void*)&pDispatch, parms,
+		SeriesIndex);
+	return CSeries(pDispatch);
+     }
+
+
+Projects should then compile without issue.
+
+===========================================
+
+Use of Strong Named Assemblies
+===========================================
+
+If you compile Strong Named Assemblies then
+imported ActiveX Controls must also be Strong 
+Named. The Utilities folder contains a Strong
+Name compiled version of:
+
+\Utilities\VS.NET\Strong Named DLLs
+- AxInterop.TeeChart.dll
+- TeeChart.dll
+
+They may be used to replace the automatically
+generated AxInterop.TeeChart.dll and
+Interop.TeeChart.dll created when TeeChart AX
+is added to a Windows Form. You should remove
+auto-generated dlls from the references list in 
+the project Solution Explorer and from the
+Obj folder of the project and Debug or Release
+Bin folder. Then copy in the new Dlls to Obj 
+and Bin folders and reference the new Dlls from
+their Obj folder location.
+
+===========================================
+Please send us details about any other
+issues found to:
+
+supportx@steema.com
+
+Many thanks !
+===========================================
+http://www.steema.com
+email: supportx@steema.com
+-------------------------------------------

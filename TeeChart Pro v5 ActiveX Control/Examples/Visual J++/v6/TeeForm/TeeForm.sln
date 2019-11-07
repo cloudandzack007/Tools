@@ -1,0 +1,13 @@
+Microsoft Visual Studio Solution File, Format Version 1.00
+Project("{66355F20-A65B-11D0-BFB5-00A0C91EBFA0}") = "TeeForm", "TeeForm.vjp", "{14544EA1-98B0-11D2-9EBC-006097386599}"
+EndProject
+Global
+	GlobalSection(LocalDeployment) = postSolution
+		StartupProject = {14544EA1-98B0-11D2-9EBC-006097386599}
+	EndGlobalSection
+	GlobalSection(BuildOrder) = postSolution
+		0 = {14544EA1-98B0-11D2-9EBC-006097386599}
+	EndGlobalSection
+	GlobalSection(DeploymentRoot) = postSolution
+	EndGlobalSection
+EndGlobal

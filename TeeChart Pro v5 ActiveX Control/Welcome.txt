@@ -1,0 +1,51 @@
+===========================================
+     Welcome to TeeChart Pro Activex 5
+         Copyright (c) 1997-2002
+           by David Berneda and
+              Marc Meumann
+           All Rights Reserved.
+
+ Steema Software SL
+ Emili Grahit 31 E-D
+ 17002 GIRONA, CATALONIA, (Spain)
+
+ http://www.steema.com
+ email: info@steema.com
+        supportx@steema.com
+
+===========================================
+
+Thank You for choosing TeeChart Pro Activex v5 !!
+
+--See Release.txt for changes from the last version
+
+--Please note, this version of TeeChart Pro v5 is Microsoft
+  .NET compatible. See the Release notes for details
+  relating to upgrade of your Visual Studio 6 application.
+
+--The TEECHART5X.HLP help file contains a complete reference 
+  guide to Chart classes. More help will be added in later 
+  versions.
+
+--The TeeChartx5Tutorials.chm file and The Helpfile User Guide
+  contain a closer view on teecharting concepts.  
+
+--The LICENSE.TXT  file contains licenses and disclaimer issues.
+
+--See the VB TeeChart5Demo project for live examples of all new
+  features.
+
+--See 'Upgrading from TeeChart v4.doc' for information about 
+  changes and upgrading of existing TeeChart v4 projects.
+
+The "Examples" folder provide projects for Visual Basic 4, 5 
+6 and 7 (.NET) and ASP in VBScript and JScript, FoxPro, 
+MsAccess 2000, Internet Explorer, Word, Excel, Visual C++, 
+Visual J++ v6 and Powerbuilder v6.
+
+Thanks Very Much !
+Steema SL.
+
+http://www.steema.com
+email: supportx@steema.com
+----------------------------------------------------------------

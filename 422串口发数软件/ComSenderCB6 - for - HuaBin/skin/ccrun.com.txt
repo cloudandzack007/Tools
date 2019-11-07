@@ -1,0 +1,19 @@
+[info]
+name=DynamicSkinForm
+ver=v9.37
+author=almdev
+web=http://www.almdev.com/
+devtool=Delphi/BCB/BDS/CRS
+sn=
+fullsource=1
+desc=一款支持Delphi和C++ Builder的VCL控件，可以帮助你创建类似Winamp那样的具有Skins的程序。menus, buttons, trackbars, gauges, labels以及其他一些控件和对象都可以创建Skins。Delphi 5~9,2006,2007和C++ Builder 5,6,2006,2007 均适用。
+
+╔-----------------------------╗
+┆ 欢迎访问 C++Builder 研究    ┆
+┆ Web:  http://www.ccrun.com  ┆
+┆ Mail: info@ccrun.com        ┆
+┆-----------------------------┆
+┆ 致力于BCB的学习,探讨和研究. ┆
+╚-----------------------------╝
+
+// 63 63 72 75 6E 2E 63 6F 6D

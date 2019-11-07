@@ -1,0 +1,511 @@
+<html>
+<head><LINK REL=STYLESHEET TYPE="text/css" HREF="DocImages/helpstyle.css"></head>
+<body  BGCOLOR=#ffffff TEXT=#000000 VLINK=#FFEE00>
+<CENTER><H1>Welcome to TeeChart Pro v5</H1>
+<img src="DocImages/Image001.png">
+<H2>Guide to help and information sources</H2>
+
+<P><img src="DocImages/Image003.jpg"></CENTER></P>
+<p><FONT SIZE=-2>This document Copyright (c) 2002 Steema Software SL. All rights reserved.</P>
+<P>No part of this document may be reproduced or distributed in any form or by any means, or stored in a database or retrieval system, without the prior written permission from Steema SL.</P>
+<P>While every precaution has been taken in the preparation of this document, Steema SL assumes no responsibility for errors or omissions, or for damages resulting from the use of the information contained herein.<br><br></P>
+<P><FONT SIZE=-2>TeeChart Pro is Copyright (c) 1995- 2002 David Berneda. All rights reserved.<br>
+TeeChart Pro ActiveX is Copyright (c) 1997-2002 David Berneda and Marc Meumann. All rights reserved.</FONT><br></P>
+<P>C++ Builder and Delphi are trademarks of Borland International, Inc. ActiveX is trademark of Microsoft Corporation. All other brand names and product names included in this book are trademarks, registered trademarks, or trade names of their respective holders.</FONT></p>
+<br>
+<h1>Contents</h1>
+
+<h3><A HREF="#INTRO">1. Introduction.</A></h3>
+<h3><A HREF="#SUPPORTED">2. Supported programming environments.</A></h3>
+<P><A HREF="#AVAILABLE">TeeChart Pro is available in 2 formats:</A><BR>
+<A HREF="#PROVEN">Proven environments.</A><BR>
+<A HREF="#INSTALL">TeeChart Installation.</A><BR>
+<A HREF="#HELP">Help installation.</A></P>
+<br>
+<h3><A HREF="#WHERE">3. Where to look for help.</A></h3>
+<P><A HREF="#CODE">Code completion.</A><BR>
+<A HREF="#ONLINE">Online Help.</A><BR>
+<A HREF="#EXAMPLES">TeeChart Examples.</A><BR>
+<A HREF="#TUTORIALS">Tutorials.</A><BR>
+<A HREF="#FAQ">FAQ.. </A><BR>
+<A HREF="#QUESTION">Support Question submission.</A><BR>
+<A HREF="#DOCUMENTS">Documents.</A><BR>
+<A HREF="#WEB">Steema Web.</A><BR>
+<A HREF="#EMAIL">Email support</A><BR>
+<A HREF="#STANDARD">Standard support</A><BR>
+<A HREF="#PRO">Pro support</A><BR>
+<A HREF="#FORUMS">Public Forums.</A><BR>
+<A HREF="#NEWSGROUP">Newsgroups</A><BR>
+<A HREF="#LISTSERVERS">ListServers.</A><BR>
+<A HREF="#REQUESTS">Feature requests.</A><BR>
+<A HREF="#BUG">Bug reporting.</A></P>
+
+<h3><A HREF="#VERSION">4. TeeChart Pro version information.</A></h3>
+<P><A HREF="#LATEST">Latest TeeChart versions.</A><BR>
+<A HREF="#VCL">Installed VCL version.</A><BR>
+<A HREF="#ACTIVEX">Installed ActiveX version.</A><BR>
+<A HREF="#GOT">Have I got the latest version?.</A><BR>
+<A HREF="#RELEASES">Obtaining maintenance releases.</A></P>
+
+<h3><A HREF="#GLOSSARY">5. Glossary of TeeChart Pro key terminology.</A></h3>
+<P><A HREF="#AXIS">Axis.</A><BR>
+<A HREF="#CANVAS">Canvas. </A><BR>
+<A HREF="#PRINCIPLE">Principal Canvases.</A><BR>
+<A HREF="#CUSTOM">Custom drawing on the Chart canvas.</A><BR>
+<A HREF="#CHOOSING">Choosing a different Canvas for displaying the Chart.</A><BR>
+<A HREF="#PANEL">Chart Panel</A><BR>
+<A HREF="#RECTANGLE">Chart Rectangle.</A><BR>
+<A HREF="#DATASOURCE">Datasource.</A><BR>
+<A HREF="#FUNCTIONS">Functions.</A><BR>
+<A HREF="#LEGEND">Legend.</A><BR>
+<A HREF="#MARKS">Marks.</A><BR>
+<A HREF="#ORTHOGONAL">Orthogonal 3D..</A><BR>
+<A HREF="#PAGING">Paging.</A><BR>
+<A HREF="#SERIES">Series.</A><BR>
+<A HREF="#TITLES">Titles.</A><BR>
+<A HREF="#WALLS">Walls.</A><BR>
+<A HREF="#TOOLS">Chart Tools.</A></P>
+
+<h3><A HREF="#LIBRARY">6. TeeChart Pro Component Library.</A></h3>
+<P><A HREF="#DIFFERENCES">Structural differences between versions.</A><BR>
+<A HREF="#MIGRATING">Migrating TeeChart Pro version 4 to version 5.</A><BR>
+<A HREF="#VCLVERSION">TeeChart VCL version.</A><BR>
+<A HREF="#ACTIVEXVERSION">TeeChart ActiveX version.</A></P>
+
+ 
+<BR><BR>
+<H2><A NAME="INTRO">1. Introduction</A></H2>
+ The purpose of this guide is to highlight the resources that are available to help you work with TeeChart Pro. All TeeChart technical information is now available in electronic format only. Electronic format brings obvious advantages such as word search, portability and speed.
+<P>There are now many sources of information for TeeChart, of which some contain duplicity or variants on the same theme and some are better than others at answering differing types of questions. To clarify it all, this guide is the roadmap.</P>
+<P>We have tried to minimize the effect of obsolescence of content by putting the information in as generically as possible, as a guide to information sources. We hope it is of use.</P>
+<B><P>Thanks for using TeeChart Pro !!</P></B>
+<P>&nbsp;</P>
+
+<H2><A NAME="SUPPORTED">2. Supported programming environments</A></H2>
+<P>&nbsp;</P>
+<H3><A NAME="AVAILABLE">TeeChart Pro is available in 2 formats:</H3>
+<P>Visual Component Library (VCL) for Borland's programming environments</P>
+<P>and</P>
+<P>ActiveX (AX) for other programming environments.</P>
+<P>Although the ActiveX version can be used with Borland compilers we recommend the use of the VCL version as it is written in Native Delphi and thus provides more flexibility for working in those environments.</P>
+<P>&nbsp;</P>
+
+<H3><A NAME="PROVEN">Proven environments.</a></H3>
+<P>TeeChart Pro VCL 4 and earlier VCL versions of TeeChart support Windows 3.xx, and Windows 95/98/NT/2000. TeeChart Pro VCL v5 is 32 bit only and does not support Windows 3.xx. TeeChart Pro AX version supports Windows 95/98/NT/2000.
+<P>It is probable that TeeChart Pro ActiveX version works in many more environments than those listed below. The list includes all tested environments. See the Steema web for an up-to-date list of all tested and supported environments. As a guideline, the list includes:</P>
+
+<P ALIGN="CENTER"><CENTER><TABLE BORDER="1" CELLSPACING=1 CELLPADDING=4 WIDTH=429>
+<TR><TD WIDTH="219" VALIGN="TOP" BGCOLOR="#ffffff"><P><B><FONT SIZE=2>Environment</B></FONT></TD>
+<TD WIDTH="66" VALIGN="TOP" BGCOLOR="#ffffff"><B><FONT SIZE=2><P>Activex version</B></FONT></TD>
+<TD WIDTH="104" VALIGN="TOP" BGCOLOR="#ffffff"><B><FONT SIZE=2><P>VCL version</B></FONT></TD>
+</TR><TR>
+<TD WIDTH="219" VALIGN="TOP"><P>Borland Delphi v1</TD>
+<TD WIDTH="66" VALIGN="TOP"><P>&nbsp;</TD>
+<TD WIDTH="104" VALIGN="TOP"><P>Yes (up to v4)</TD>
+</TR><TR>
+<TD WIDTH="219" VALIGN="TOP"><P>Borland Delphi v2</TD>
+<TD WIDTH="66" VALIGN="TOP"><P>&nbsp;</TD>
+<TD WIDTH="104" VALIGN="TOP"><P>Yes (up to v4)</TD>
+</TR><TR>
+<TD WIDTH="219" VALIGN="TOP"><P><span style="mso-bidi-font-size: 10.0pt" lang="EN-GB">Borland Delphi v3, v4, v5, v6</span></TD>
+<TD WIDTH="66" VALIGN="TOP"><P>Yes</TD>
+<TD WIDTH="104" VALIGN="TOP"><P>Yes</TD>
+</TR><TR>
+<TD WIDTH="219" VALIGN="TOP"><P><span lang="EN-GB" style="mso-bidi-font-size: 10.0pt">Borland C++ Builder v1, v3</span></TD>
+<TD WIDTH="66" VALIGN="TOP"><P>Yes</TD>
+<TD WIDTH="104" VALIGN="TOP"><P>Yes (up to v4)</TD>
+</TR><TR>
+<TD WIDTH="219" VALIGN="TOP"><P><span lang="EN-GB" style="mso-bidi-font-size: 10.0pt">Borland C++ Builder v4, v5</span></TD>
+<TD WIDTH="66" VALIGN="TOP"><P>Yes</TD>
+<TD WIDTH="104" VALIGN="TOP"><P>Yes</TD>
+</TR><TR>
+<TD WIDTH="219" VALIGN="TOP"><P><span lang="EN-GB" style="mso-bidi-font-size: 10.0pt">Microsoft Visual C++ v5</span></TD>
+<TD WIDTH="66" VALIGN="TOP"><P>Yes</TD>
+<TD WIDTH="104" VALIGN="TOP"><P>&nbsp;</TD>
+</TR><TR>
+<TD WIDTH="219" VALIGN="TOP"><P>Microsoft Visual C++ v5</TD>
+<TD WIDTH="66" VALIGN="TOP"><P>Yes</TD>
+<TD WIDTH="104" VALIGN="TOP"><P>&nbsp;</TD>
+</TR><TR>
+<TD WIDTH="219" VALIGN="TOP"><P><span lang="EN-GB" style="mso-bidi-font-size: 10.0pt">Microsoft Visual Basic v4 and v5</span></TD>
+<TD WIDTH="66" VALIGN="TOP"><P>Yes</TD>
+<TD WIDTH="104" VALIGN="TOP"><P>&nbsp;</TD>
+</TR><TR>
+<TD WIDTH="219" VALIGN="TOP"><P><span lang="EN-GB" style="mso-bidi-font-size: 10.0pt">Microsoft FoxPro v4 and v5</span></TD>
+<TD WIDTH="66" VALIGN="TOP"><P>Yes</TD>
+<TD WIDTH="104" VALIGN="TOP"><P>&nbsp;</TD>
+</TR><TR>
+<TD WIDTH="219" VALIGN="TOP"><P><span lang="EN-GB" style="mso-bidi-font-size: 10.0pt">Microsoft Visual J++ v1.1</span></TD>
+<TD WIDTH="66" VALIGN="TOP"><P>Yes</TD>
+<TD WIDTH="104" VALIGN="TOP"><P>&nbsp;</TD>
+</TR><TR>
+<TD WIDTH="219" VALIGN="TOP"><P><span lang="EN-GB" style="mso-bidi-font-size: 10.0pt">Microsoft Internet Explorer v3,v4,v5</span></TD>
+<TD WIDTH="66" VALIGN="TOP"><P>Yes</TD>
+<TD WIDTH="104" VALIGN="TOP"><P>&nbsp;</TD>
+</TR><TR>
+<TD WIDTH="219" VALIGN="TOP"><P><span lang="EN-GB" style="mso-bidi-font-size: 10.0pt">Microsoft Office 97(VBA)</span></TD>
+<TD WIDTH="66" VALIGN="TOP"><P>Yes</TD><TD WIDTH="104" VALIGN="TOP"><P>&nbsp;</TD>
+</TR><TR>
+<TD WIDTH="219" VALIGN="TOP"><P><span lang="EN-GB" style="mso-bidi-font-size: 10.0pt">Microsoft Office 2000 (VBA)</span></TD>
+<TD WIDTH="66" VALIGN="TOP"><P>Yes</TD>
+<TD WIDTH="104" VALIGN="TOP"><P>&nbsp;</TD>
+</TR><TR>
+<TD WIDTH="219" VALIGN="TOP"><P>Microsoft ActivePad v1</TD>
+<TD WIDTH="66" VALIGN="TOP"><P>Yes</TD>
+<TD WIDTH="104" VALIGN="TOP"><P>&nbsp;</TD>
+</TR><TR>
+<TD WIDTH="219" VALIGN="TOP"><P><span lang="EN-GB" style="mso-bidi-font-size: 10.0pt">Microsoft IIS v4 ASP</span></TD>
+<TD WIDTH="66" VALIGN="TOP"><P>Yes</TD><TD WIDTH="104" VALIGN="TOP"><P>&nbsp;</TD>
+</TR><TR>
+<TD WIDTH="219" VALIGN="TOP"><p class="MsoNormal" style="MARGIN: 1pt 0cm"><span lang="EN-GB" style="mso-bidi-font-size: 10.0pt">Microsoft Visual Studio v6 <O:P></O:P>
+</span></p>
+<p class="MsoNormal" style="MARGIN: 1pt 0cm"><span lang="EN-GB" style="mso-bidi-font-size: 10.0pt">(VC++, VB, VFP, VJ++, Visual Interdev)</span></TD>
+<TD WIDTH="66" VALIGN="TOP"><P>Yes</TD>
+<TD WIDTH="104" VALIGN="TOP"><P>&nbsp;</TD>
+</TR><TR>
+<TD WIDTH="219" VALIGN="TOP"><P><span lang="EN-GB" style="mso-bidi-font-size: 10.0pt">Sybase Powerbuilder v6, v7</span></TD>
+<TD WIDTH="66" VALIGN="TOP"><P>Yes</TD>
+<TD WIDTH="104" VALIGN="TOP"><P>&nbsp;</TD>
+</TR><TR>
+<TD WIDTH="219" VALIGN="TOP"><P><span lang="EN-GB" style="mso-bidi-font-size: 10.0pt">National Instruments Labview v6</span></TD>
+<TD WIDTH="66" VALIGN="TOP"><P>Yes</FONT></TD>
+<TD WIDTH="104" VALIGN="TOP"><P>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+ <P>&nbsp;</P>
+
+<H3><A NAME="INSTALL">TeeChart Installation</a></H3>
+<P>All versions of TeeChart Pro are delivered in a single executable installer file. TeeChart Pro is also now available on CD-ROM. Follow the CD-ROM instructions to select the correct installer for your programming environment. Running the installer file starts the TeeChart Pro installation, updating all relevant registry entries and copying files to disk.</P>
+<P>The installer creates a menu group below the Windows 9x / NT / 2000 menu to access TeeChart Pro files, tutorial documents, help and examples.</P>
+<P>&nbsp;</P>
+
+<P><B><A NAME="HELP">Help installation</a></B></P>
+<P>The TeeChart online help file is installed at TeeChart installation time. See the section <A HREF="#ONLINE">"Where to look for help: Online Help"</A> for a guide on usage. The installer registers the help file with Windows and adds an icon for direct access to the TeeChart menu group. Via this standard installation you can obtain, using F1 from most programming environments, help on all TeeChart Pro's properties and methods and access to Online help's TeeChart User (quick reference) guide. You can further enhance the installation by adding TeeChart to the index of your programming environment's default Help Contents file (.CNT).</P>
+<P>E.g. How to add TeeChart Pro Online Help to your programming environment's default Help index.</P>
+
+<P ALIGN="CENTER"><CENTER><table border="1" width="429" height="84" CELLSPACING=1 CELLPADDING=4>
+  <tr>
+    <td width="100" height="14" ALIGN="CENTER"><B>Programming environment</B></td>
+    <td width="164" height="14" ALIGN="CENTER"><B>Contents file</B></td>
+    <td width="165" height="14" ALIGN="CENTER"><B>Add line</B</td>
+  </tr>
+  <tr>
+    <td width="100" height="14" VALIGN="TOP"><B>Delphi</B></td>
+    <td width="164" height="14" VALIGN="TOP">Delphix.cnt<p>(x is version number)</td>
+    <td width="165" height="14" VALIGN="TOP">(TeeChart VCL version)<p>Index section :Index TeeChart Pro =teechart.hlp Include section :Include teechart.hlp</td>
+  </tr>
+  <tr>
+    <td width="100" height="14" VALIGN="TOP"> &nbsp</td>
+    <td width="164" height="14" VALIGN="TOP">Delphix.cfg<p>(x is version number)</td>
+    <td width="165" height="14" VALIGN="TOP">(TeeChart VCL version)<p>:Link TeeChart.hlp</td>
+  </tr>
+  <tr>
+    <td width="100" height="14" VALIGN="TOP"><B>Visual Basic</B></td>
+    <td width="164" height="14" VALIGN="TOP">VBx.cnt<p>(x is version number)</td>
+    <td width="165" height="14" VALIGN="TOP">(TeeChart AX version)<p> :Index TeeChart Pro=teechartx.hlp</td>
+  </tr>
+</table>
+</CENTER>
+<P>&nbsp;</P>
+
+<H2><A NAME="WHERE">3. Where to look for help</A></H2>
+<P>There are several sources of help available to users of TeeChart Pro. This area is important to an understanding of where to look and can save a great deal of time.</P>
+<P>&nbsp;</P>
+
+<H3><A NAME="CODE">Code completion</A></H3>
+<P>Presently, support for code 'completion' is limited to Delphi v3 and later, C++ Builder v4 and later, Visual Basic v5 and Visual Studio v6. The native code prompter in these programming environments will show all properties and methods available for any TeeChart class. Simply type in the start of the programming line and on typing the point separator all available Class options will appear. For properties and methods, required variables and their type will be displayed.</P>
+<P>&nbsp;</P>
+
+<H3><A NAME="ONLINE">Online Help</A></H3>
+<P>The Online help is the first stop for any queries relating to syntax of code declarations. The Online help, through its inherent design, documents the class structure of the TeeChart component library. The Online help can be reached in several ways:</P>
+<UL><LI>By entering F1 when a TeeChart property is selected as written on your programming page. Support for F1 is limited to a few programming environments, namely Delphi, Borland C++ Builder (VCL version) and Visual Basic, Visual FoxPro and Microsoft Office (AX version).</LI>
+<LI>By entering F1 when highlighting a TeeChart placed on a Form. This is supported by the above named programming environments and Visual C++. You may then select a Contents entry or search for the property or method via the index.</LI>
+<LI>By opening the help file from the Windows menu. Go to the TeeChart icon group in the menu and select 'Help'. You may then select a Contents entry or search for the property or method via the index.</LI>
+<LI>By Selecting the Question mark icon from the top right corner of the Chart Editor and dragging it onto a property on the Editor page. TeeChart help will open and show the runtime equivalent of that property. The help file may then be searched to find any other TeeChart property or method.</LI></UL>
+<P>&nbsp;</P>
+
+<H3><A NAME="EXAMPLES">TeeChart Examples</A></H3>
+<P>Coded examples can be accessed via the 'Examples' icon in the TeeChart Pro menu group. The icon takes you to the parent folder for all coded examples, which are classified by sub-folder.</P>
+<P>A useful way to get help from the examples is to use Windows' file finder to search through the directory tree for project files containing a word (property or method) for which you would like to see a coded example. Follow this up by opening the projects related to the looked for item.</P>
+<P>Example:<P>
+<P>Use Windows Find File and look for the method or property in this way:</P>
+<OL><LI>Point the Windows' File finder to the TeeChart Examples folder structure.</LI>
+<LI>Select the File type for the programming environment in which you are working from the table below and put the wildcard equivalent (e.g. *.pas) in the file search criteria of your search.</LI>
+<LI>In the 'Advanced' section of File Finder put the word or phrase you are searching for (e.g. "GetAxisLabel").</LI>
+<P>Note - Try to limit the search criteria as much as possible to avoid mistakes, as syntax will change between programming environments. For example the OnGetAxisLabel event declares as (depending on Form and Chart name):</P>
+<P>"Private Sub TChart1_OnGetAxisLabel" in Visual Basic</P>
+<P>"procedure TForm1.Chart1GetAxisLabel" in Delphi</P>
+<P>"void CVCExampleDlg::OnOnGetAxisLabelTchart1" in MS VC++</P>
+<LI>Start search. All files returned will have an associated project file as denoted by the extensions indicated in the table below. Open the project file in the same folder as the found file to open the example project. Alternatively view the found file with notepad or any other text editor.</LI></OR>
+
+<P ALIGN="CENTER"><CENTER><table border="1" width="429" height="84" CELLSPACING=1 CELLPADDING=4>
+  <tr>
+    <td width="33%"height="14" ALIGN="CENTER"><B>Programming language</B></td>
+    <td width="33%" height="14" ALIGN="CENTER"><B>File type containing TeeChart code</B></td>
+    <td width="34%" height="14" ALIGN="CENTER"><B>Associated Project file</B</td>
+  </tr>
+  <tr>
+    <td width="33%" height="14" VALIGN="TOP">Borland Delphi</td>
+    <td width="33%" height="14" VALIGN="TOP">*.pas</td>
+    <td width="34%" height="14" VALIGN="TOP"><B>.dpr</B></td>
+  </tr>
+  <tr>
+    <td width="33%" height="14" VALIGN="TOP">Borland C++ Builder</td>
+    <td width="33%" height="14" VALIGN="TOP">*.cpp</td>
+    <td width="34%" height="14" VALIGN="TOP"><B>.mak</B></td>
+  </tr>
+  <tr>
+    <td width="33%" height="14" VALIGN="TOP">MS Visual Basic</td>
+    <td width="33%" height="14" VALIGN="TOP">*.frm, *.bas</td>
+    <td width="34%" height="14" VALIGN="TOP"><B>.vbp</B></td>
+  </tr>
+  <tr>
+    <td width="33%" height="14" VALIGN="TOP">MS Visual C++</td>
+    <td width="33%" height="14" VALIGN="TOP">*.cpp</td>
+    <td width="34%" height="14" VALIGN="TOP"><B>.dsw (workspace)</B></td>
+  </tr>
+  <tr>
+    <td width="33%" height="14" VALIGN="TOP">MS VBScript</td>
+    <td width="33%" height="14" VALIGN="TOP">*.htm, *.asp</td>
+    <td width="34%" height="14" VALIGN="TOP">&nbsp</td>
+  </tr>
+  <tr>
+    <td width="33%" height="14" VALIGN="TOP">MS JavaScript</td>
+    <td width="33%" height="14" VALIGN="TOP">*.htm, *.asp</td>
+    <td width="34%" height="14" VALIGN="TOP">&nbsp</td>
+  </tr>
+  <tr>
+    <td width="33%" height="14" VALIGN="TOP">MS Java++</td>
+    <td width="33%" height="14" VALIGN="TOP">*.java</td>
+    <td width="34%" height="14" VALIGN="TOP"><B>.dsw, .sln</B></td>
+  </tr>
+  </table>
+</CENTER>
+<P>&nbsp;</P>
+
+<H3><A NAME="TUTORIALS">Tutorials</A></H3>
+<P>HTML Tutorials contain a guide to use of the key areas of TeeChart Pro's component libraries. You can access the Tutorials via the icon in the TeeChart Pro menu group. We recommend you take a look at the Tutorials as early as possible to familiarize yourself with the information available: you will probably find some useful tips there when you come to start working with projects. We recommend that you use Internet Explorer (v4 or greater) when viewing the tutorials as some features are optimised using ActiveX.</P>
+<P>&nbsp;</P>
+ 
+<H3><A NAME="FAQ">FAQ</A></H3>
+<P>TeeChart Pro's Frequently Asked Questions are available on the Steema web: </P>
+<P><A HREF="http://www.steema.com/support/faq/faqindex.htm">http://www.steema.com/support/faq/faqindex.htm</A></P>
+<P>The FAQ includes many hints on usage of specific properties and methods and on the implementation of various types of applications.</P>
+<P>&nbsp;</P>
+
+<H3><A NAME="QUESTION">Support Question submission</A></H3>
+<P>The Steema web includes a page for posting questions to us.</P>
+<P>You can use this method to send us any questions for information that you cannot find in the FAQ. We prefer to receive questions sent in this way if possible, as the format allows us to log, track and record trends in problems reported to us more easily.</P>
+<P><A HREF="http://www.steema.com/support/question.htm">http://www.steema.com/support/question.htm</A></P>
+<P>&nbsp;</P>
+ 
+<H3><A NAME="DOCUMENTS">Documents</A></H3>
+<P>TeeChart documents are included in the root installation folder of TeeChart. These files will vary between versions but normally include several text files:</P>
+<P>Welcome.txt -    General information of interest</P>
+<P>Release.txt -      Contains release notes for your version of TeeChart</P>
+<P>License.txt -      License information</P>
+<P>The folder will also contain Word format documents including: </P>
+<P><B>User guide</B></P>
+<P>The User Guide now forms part of the Online Help and may be reached directly via an icon in the TeeChart Program Manager menu group. It includes an introductory guide to creating and working with Charts and a more in-depth look at some characteristics of Chart properties and methods.</P>
+<P>To access the User Guide, open the Online Help Contents and follow the links to User Guide.</P>
+<P><B>Introduction to TeeChart</B></P>
+<P>This document presents a guide to all information sources for TeeChart.</P>
+<P>&nbsp;</P>
+
+<H3><A NAME="WEB">Steema Web</A></H3>
+<P>The Steema web, <A HREF="http://www.steema.com/">www.steema.com</A> is regularly updated with new information:</P>
+<UL><LI>The Technical pages at the website contain many coded examples to download in addition to technical commentary and updated FAQ</LI>
+<LI>New version information - maintenance releases for download</LI>
+<LI>Links to webs of interest to TeeCharters</LI>
+<LI>Trial versions of new and existing products</LI></UL>
+<P>&nbsp;</P>
+
+<H3><A NAME="EMAIL">Email support</A></H3>
+<P>Steema SL provides an email technical support service. This takes the form of two levels:</P>
+<P>&nbsp;</P>
+<P><B><A NAME="STANDARD">Standard support</A></B></P>
+<UL><LI>30 days free support on purchase of a TeeChart product</LI>
+<LI>Help with installation queries</LI>
+<LI>Maintenance release notification</LI>
+<LI>Receipt of up-to-date TeeChart FAQs</LI>
+<LI>Submittal of technical queries</LI></UL>
+<P>We will attempt to respond to those enquiries that highlight a new issue not covered in the FAQ and that may be of interest to other TeeCharters. We will include the reply in the updated FAQs. Please use the web Question submission form to send us questions and refer to the FAQ before submitting questions.</P>
+<P>If you don't have access to the WWW then please use these email addresses:</P>
+<P>TeeChart Pro VCL support: <A HREF="mailto:support@steema.com">support@steema.com</A></P>
+<P>TeeChart Pro AX support: <A HREF="mailto:supportx@steema.com">supportx@steema.com</A></P>
+<P>&nbsp;</P>
+
+<P><B><A NAME="PRO">Pro support</A></B></P>
+<P>This takes the form of the Pro Support program. Please check the Steema web for latest information about support packages.</P>
+<P>The Pro program includes these features:</P>
+<P>As Standard support plus:</P>
+<UL><LI>12 priority support questions</LI>
+<LI>Reply within 48 hours in working days with receipt confirmation emailed the same day</LI>
+<LI>Emailed problem reports</LI>
+<LI>TeeChart version release notifications</LI></UL>
+<P>&nbsp;</P>
+
+<H3><A NAME="FORUMS">Public Forums</A></H3>
+<P>Besides in-house support for TeeChart here are some public locations where you can obtain help.</P>
+<P>&nbsp;</P>
+
+<P><B><A NAME="NEWSGROUP">Newsgroups</A></B></P>
+<P>A newsgroup at Inprise Borland is aimed at helping Delphi developers with reporting and charting issues. Questions and answers relating to the TeeChart VCL version may be posted there.</P>
+<P>Connect your Internet News Browser to this newsgroup server:</P>
+<P>FORUMS.BORLAND.COM</P>
+<P>Point your Internet News browser to this newsgroup:</P>
+<P>borland.public.delphi.reporting-charting</P>
+<P><b>Steema newsgroups</b></P>
+<P>Steema provides newsgroups for support interaction with Steema Support and other Steema product developers:<br>To connect to Steema's newsgroups point your news reader to:</P><P><center><b>IP address: 62.57.108.53</b></center></P>
+
+<P>&nbsp;</P>
+ 
+<P><B><A NAME="LISTSERVERS">ListServers</A></B></P>
+<P>Another source of help with TeeChart issues is an independent Mailing List. See the following web page for details:</P>
+<P>ListBot Forums</P>
+<P>See: <A HREF="http://teechart.listbot.com">http://teechart.listbot.com</A></P>
+<P>Remember the mailing lists are a PUBLIC service, so all your emails will be received by us and by all other TeeCharters.</P>
+<P>&nbsp;</P>
+ 
+<P><B><A NAME="REQUESTS">Feature requests</A></B></P>
+<P>Please mail feature requests to <A HREF="mailto:info@steema.com">info@steema.com</A> or use the <A HREF="http://www.steema.com/support/question.htm">TeeQuestion submission form</A>. We will evaluate the contents of the wish list when defining new versions of TeeChart.</P>
+<P>&nbsp;</P>
+
+<P><B><A NAME="BUG">Bug reporting</A></B></P>
+ <P>Use the TeeQuestion submission form on the Steema web for bug reporting. Access this web page on:</P>
+<P><A HREF="http://www.steema.com/support/question.htm">http://www.steema.com/support/question.htm</A></P>
+<P>&nbsp;</P>
+
+<H2><A NAME="VERSION">4. TeeChart Pro version information</A></H2>
+<P>&nbsp;</P>
+
+<H3><A NAME="LATEST">Latest TeeChart versions</A></H3>
+ <P>This guide accompanies all version 5 TeeChart Pro products. For specific release information you can obtain the information in these ways:</P>
+<P>&nbsp;</P>
+
+<H3><A NAME="VCL">Installed VCL version.</A></H3>
+<P>Place a TChart on a Form in your Delphi or C++ Builder IDE. Right click on the Chart to bring up the TeeChart drop down menu. At the top of the list of menu items you will see the TeeChart release version number.</P>
+<P>&nbsp;</P>
+ 
+<H3><A NAME="ACTIVEX">Installed ActiveX version</A></H3>
+<P>Use Window's Explorer to locate the teechart.ocx file. This is the file that contains the ActiveX TeeChart Component Library. Select the file and right mouse click to bring up a 'drop down menu'. The drop down menu shows you the option to select 'Properties' where you can find the TeeChart version number.</P>
+<P>&nbsp;</P>
+ 
+<H3><A NAME="GOT">Have I got the latest version?</A></H3>
+<P>Steema will email you with new release information for your version of TeeChart. Unfortunately we have no way of checking that you have received the email. To confirm that you have the latest version of TeeChart you can connect to the Steema web and check the Versions page: </P>
+<P><A HREF="http://www.steema.com/support/version%20info.htm/">www.steema.com/support/version%20info.htm</A></P>
+<P>See the sections 'Installed VCL version' and 'Installed ActiveX version' for a guide as to how to check which version of TeeChart you have installed.</P>
+<P>&nbsp;</P>
+
+<H3><A NAME="RELEASES">Obtaining maintenance releases</A></H3>
+<P>Maintenance releases, e.g. v5.0 --> v5.1 (NOT new versions e.g. v5 --> v6) can be obtained free of charge from the Customer download page at the Steema web. See the section entitled 'Have I got the latest version?’</P>
+<P>&nbsp;</P>
+
+<H2><A NAME="GLOSSARY">5. Glossary of TeeChart Pro key terminology</A></H2>
+<P>&nbsp;</P>
+ 
+<H3><A NAME="AXIS">Axis</A></H3>
+<P><B>Basic Chart Axes</B></P>
+<P>Axes refer to the scales that can be placed on the Chart to orientate the data. In standard terms these Axes have either an X, Y or Z component as in the diagram below.</P>
+<P><CENTER><img src="DocImages/image007.png"></P></CENTER>
+<P>TeeChart has five principal axes, Left, Top, Right, Bottom and Depth. Different data Series can be related to different Axes permitting different Axis scales for these Series on the same Chart.</P>
+<UL><LI>Left and Right Axes refer to a Y-Axis</LI>
+<LI>Top and Bottom Axes refer to an X-Axis</LI>
+<LI>The Depth Axis refers to the Z-Axis</LI></UL>
+<P>&nbsp;</P>
+
+<P><B>Multiple Axes</B></P>
+<P>TeeChart Pro version 5 offers true multiple Axes at runtime. Multiple Axes permit an independently scaled Axis to be placed anywhere on the Chart with any Start/Finish point.</P>
+<P>The following diagram shows an example of the use of multi-axes:</P>
+<P><CENTER><img src="DocImages/image008.png"></P></CENTER>
+<P>Look up Axes in the online help file for a full list of properties and methods and an overview of functionality.</P>
+<P>&nbsp;</P>
+
+<H3><A NAME="CANVAS">Canvas</A></H3>
+<P><B><A NAME="PRINCIPLE">Principal Canvases</B></A></P>
+<P>TeeChart uses several Canvases. Principal canvases include: </P>
+<UL><LI>Chart Canvas, which is the visible Area enclosed by the Chart Panel boundary. All Chart Axes and data are plotted on the Chart Canvas.</LI>
+<LI>Printer Canvas. TeeChart transfers contents of the Onscreen Chart to the Printer Canvas when printing.</LI></UL>
+<P>&nbsp;</P>
+
+<P><B><A NAME="CUSTOM">Custom drawing on the Chart canvas</B></A></P>
+<P>If you require a feature that we haven't added to the standard TeeChart properties and methods then, with almost unlimited flexibility, you can add it yourself using the TeeChart Custom draw Canvas methods. Custom draw permits you to output your own objects and text to the Chart panel associating them with runtime variables and Chart conditions. These could take the form of hints on passing a mouse over a data Series object or a message triggered by a threshold exceeded. The Custom Canvas also supports a variety of 3D objects.</P>
+<P><CENTER><img src="DocImages/image009.png"></P></CENTER>
+<P>Look up Canvas in the online help file for a full list of properties and methods and an overview of functionality.</P>
+<P>&nbsp;</P>
+
+<P><B><A NAME="CHOOSING">Choosing a different Canvas for displaying the Chart.</B></A></P>
+<P>The basic (default) TeeChart Canvas is suitable for fast 2D and 3D (orthogonal) plots. You may select the alternative Windows 3D Canvas or the OpenGL Canvas to display Charts with sophisticated visual characteristics. See the TeeChart documentation for more help on this subject.</P>
+<P><CENTER><img src="DocImages/image010.png"></P></CENTER>
+<P>Fig. Main Chart Components</P>
+<P>&nbsp;</P>
+
+<H3><A NAME="PANEL">Chart Panel</A></H3>
+<P>The Chart panel is the backdrop to the Chart. If TeeChart is laid bare of all contents, e.g. 'Visible off' for all Charting components, it makes a perfectly serviceable 3D panel.</P>
+<P>Lookup TChart (ITChart in AX version) in the online help file for a full list of properties and methods and an overview of functionality.</P>
+<P>&nbsp;</P>
+
+<H3><A NAME="RECTANGLE">Chart Rectangle</A></H3>
+<P>The Charting area: This is the area contained within the principle 5 Chart axes (Left, Top, Right, Bottom and Depth). The Chart data Series and Grid are plotted inside the Chart rectangle.</P>
+<P>Some Chart Series types do not require and do not install by default any axes. Setting the Chart Frame to visible enables the Chart rectangle to be highlighted by the selected colour. </P>
+<P>Look up TChart in the online help file for a full list of properties and methods and an overview of functionality.</P>
+<P>&nbsp;</P>
+
+<H3><A NAME="DATASOURCE">Datasource</A></H3>
+<P>The Datasource for a Chart refers to database sourced data. For the VCL version of TeeChart pro the sources include TTables and TQueries. For the ActiveX version the Datasource refers to an ODBC accessible table or SQL query. Non-Datasource sources for data are defined by the TeeChart developer via code using TeeChart's Add methods to add data programmatically to the Chart.</P>
+<P>&nbsp;</P>
+
+<H3><A NAME="FUNCTIONS">Functions</A></H3>
+<P>TeeChart offers several basic functions such as Average, Moving Average and Curve Fit. These may be selected via the Chart Editor's Series gallery. The function may use another Chart Series as input for its point plot. Functions are added as Line Series type by default but may optionally be changed to a different visualization such as a Bar Series or Point Series.</P>
+<P>&nbsp;</P>
+
+<H3><A NAME="LEGEND">Legend</A></H3>
+<P>The Legend has four default positioning options, Left, Top, Right and Bottom but you may move the Legend to place it anywhere on the Chart Panel including inside the Chart rectangle. The Legend has many supporting properties and events to allow customisation and/or interactive display.</P>
+<P>&nbsp;</P>
+
+<H3><A NAME="MARKS">Marks</A></H3>
+<P>Marks refer to the Labels associated with each data point of a Series. Marks may be displayed in several ways; as the data value, as a text description of the point or as a percentage related to the value of all points taken as a whole. Marks are normally displayed alongside, above or below the Series point. An alternative and complementary data related labelling scheme is the Axis Labels which label key scale points on the Axis. Marks may be repositioned and their properties modified at runtime.</P>
+<P>&nbsp;</P>
+
+<H3><A NAME="ORTHOGONAL">Orthogonal 3D</A></H3>
+<P>Orthogonal 3D Charts use the default Chart Canvas to plot an angled, vector drawn line to represent a 3D angle (depth). This gives a basic level of 3D visual appearance whilst remaining very fast for data plots. See the TeeChart documentation for more about TeeChart Canvases and the alternative Windows 3D and OpenGL canvases.</P>
+<P>&nbsp;</P>
+
+<H3><A NAME="PAGING">Paging</A></H3>
+<P>TeeCharts may optionally be subdivided into several Chart pages. This helps visualization of large data sets or may be useful for 'time dividing' screens of data. Pages may be browsed.</P>
+<P>&nbsp;</P>
+
+<H3><A NAME="SERIES">Series</A></H3>
+<P>Data Series are the data display method type, e.g. Line Series, Bar Series, Pie, etc. You can mix different Series types in a Chart according to your requirement. Thus your design is not limited to any 'Chart types' defined by TeeChart, the concept of Chart type being virtually obsolete in terms of the number of permutations of Charts (Series type mix) you may create.</P>
+<P>Look up Series in the online help file for a full list of properties and methods and an overview of functionality.</P>
+<P>&nbsp;</P>
+
+<H3><A NAME="TITLES">Titles</A></H3>
+<P>Use TeeChart's Title properties to add Header and Footer titles to the Chart, Axis titles and data Series Titles. Custom draw permits you to add additional titles anywhere on the Chart Canvas.</P>
+<P>&nbsp;</P>
+
+<H3><A NAME="WALLS">Walls</A></H3>
+<P>The Chart Walls are boundaries that can be placed at the side, bottom and back of the Chart Rectangle to accentuate the Charted area. Chart walls are a visual component not containing any data scale related information. TeeChart Pro version 5 has four Walls, Left, Right, Bottom and Back. Each Wall may be coloured and changed dimensionally.</P>
+<P>&nbsp;</P>
+
+<H3><A NAME="TOOLS">Chart Tools</A></H3>
+<P>TeeChart Tools may be associated with a Chart, Series or Axes to facilitate annotation, navigation and data demarcation. An example, the Axis Arrow Tool places arrows on the Axis that scroll the axis when selected. The DragMark tool allows selected Series’ Marks to be mousedragged. Tools are selectable via the Chart Editor or by code</P>
+<P>&nbsp;</P>
+
+<H2><A NAME="LIBRARY">6. TeeChart Pro Component Library</A></H2>
+<P>&nbsp;</P> 
+
+<H3><A NAME="DIFFERENCES">Structural differences between versions</A></H3>
+<P>TeeChart Pro is written in Delphi. The ActiveX version is based on the same Chart code as the VCL version. Due to flexibility offered by COM Interfaces and the chance to start with 'mature' code, the ActiveX Class structure has been redefined to present a slightly more intuitive model.</P>
+<P>&nbsp;</P>
+
+<H3><A NAME="MIGRATING">Migrating TeeChart Pro version 4 to version 5</A></H3>
+<P><B><A NAME="VCLVERSION">TeeChart VCL version</B></A></P>
+<P>For reasons of backwards compatibility the Class structure of the TeeChart VCL version 5 makes few changes to those of version 4. Thus existing version 4 code will work with version 5 without the need for modification. See the product release notes for any special observations.</P>
+<P>&nbsp;</P>
+
+<P><B><A NAME="ACTIVEXVERSION">TeeChart ActiveX version</B></A></P>
+<P>There are very few changes to the Class structure between version 4 and 5 of TeeChart ActiveX control. The number of interfaces in version 5 has been increased. Code written for version 4 will work directly with version 5. A key difference between version4 and 5 is the renumbering of interface CLSIDs to allow version 4 and version 5 to run alongside each other on the same system. See the product release notes and documentation for special observations and notes about upgrading projects to version 5. Note that some properties and methods from version 4 are deprecated (though still functional) in version 5 so please see the helpfile for the latest information. We recommend 'non-use' of deprecated properties/methods.</P>
+</body>
+</html> 

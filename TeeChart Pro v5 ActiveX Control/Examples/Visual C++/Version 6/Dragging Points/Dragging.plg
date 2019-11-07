@@ -1,0 +1,74 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Dragging - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP140.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /FR"Debug/" /Fp"Debug/Dragging.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"C:\Program Files\TeeChart Pro v5 ActiveX Control\Examples\Visual C++\Version 6\Dragging Points\DraggingDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP140.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP141.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Dragging.pdb" /debug /machine:I386 /out:"Debug/Dragging.exe" /pdbtype:sept 
+".\Debug\aspect.obj"
+".\Debug\barseries.obj"
+".\Debug\brush.obj"
+".\Debug\canvas.obj"
+".\Debug\Dragging.obj"
+".\Debug\DraggingDlg.obj"
+".\Debug\lineseries.obj"
+".\Debug\marks.obj"
+".\Debug\pen.obj"
+".\Debug\pointer.obj"
+".\Debug\pointseries.obj"
+".\Debug\scroll.obj"
+".\Debug\series.obj"
+".\Debug\StdAfx.obj"
+".\Debug\tchart.obj"
+".\Debug\teefunction.obj"
+".\Debug\titles.obj"
+".\Debug\zoom.obj"
+".\Debug\Dragging.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP141.tmp"
+<h3>Output Window</h3>
+Compiling...
+DraggingDlg.cpp
+Linking...
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP143.tmp" with contents
+[
+/nologo /o"Debug/Dragging.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\aspect.sbr"
+".\Debug\barseries.sbr"
+".\Debug\brush.sbr"
+".\Debug\canvas.sbr"
+".\Debug\Dragging.sbr"
+".\Debug\DraggingDlg.sbr"
+".\Debug\lineseries.sbr"
+".\Debug\marks.sbr"
+".\Debug\pen.sbr"
+".\Debug\pointer.sbr"
+".\Debug\pointseries.sbr"
+".\Debug\scroll.sbr"
+".\Debug\series.sbr"
+".\Debug\tchart.sbr"
+".\Debug\teefunction.sbr"
+".\Debug\titles.sbr"
+".\Debug\zoom.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP143.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+Dragging.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

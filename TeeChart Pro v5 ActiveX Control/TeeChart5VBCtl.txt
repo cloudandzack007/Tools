@@ -1,0 +1,5 @@
+TeeChart5VBCtl.ocx is compiled with the 
+Visual Basic 5 & 6 'ActiveX Control' 
+example and is installed and registered 
+here at install time to provide support 
+for the ASP UserControl example.
